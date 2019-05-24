@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html" charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=11" />
+<!-- 기본으로 포함되어야 하는 css -->
+<link rel="stylesheet" type="text/css" href="../Common/Styles/Css/Layout.css">
+<link rel="stylesheet" type="text/css" href="../Common/Styles/Css/Font.css">
+<!-- 추가적으로 포함되어야 하는 css -->
+<link rel="stylesheet" type="text/css" href="Styles/Css/PhotoPrinting.css">
+
+<!-- js -->
+<!-- 기본으로 포함되어야 하는 js -->
+<script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
+<script language="JavaScript" type="text/javascript" src="../../Scripts/LogConsole.js"></script>
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/jquery-3.1.1.min.js"></script>
+
+	<link href="../../css/Main.css" rel="stylesheet" type="text/css" />
+	<script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
+
+<!-- 추가적으로 포함되어야 하는 js -->
+<script language="JavaScript" type="text/javascript" src="Scripts/PhotoPrinting.js"></script>
+<script language="JavaScript" type="text/javascript" src="Scripts/PhotoJson.js"></script>
+  <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
+
+  <!--<link rel="stylesheet" href="../../css/style_riyadh.css">-->
+  <style type="text/css">
+  	.subheader{
+  		height:68px;
+  	}
+  	.jumbotron{
+  		padding-bottom: 128px;
+  		margin-bottom: 0;
+  	}
+
+ a {
+    color: #4a32a4;
+}
+ </style>
+
+</head>
+
+<body onload="JSMain()" onbeforeunload="JSUnload()" ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;" class="noselect unselectable">
+
+<header >
+	<div class="logo">
+      <img src="../../assets/logo.png" onclick="FC_ContentsCall('Menu')">
+    </div>
+</header>
+<nav>
+	<img src="../../assets/icons/home.png" class="img-home" onclick="FC_ContentsCall('Menu')">
+</nav>
+
+	<div id="wrapper">
+		<!--<div id="selfie-instructions">
+
+		</div>-->
+		<div id="container">
+			<div id="contents">
+				<div class="pannel">
+					<img src="Images/Pannel-outline.png">
+					<canvas id="camImage" width="910" height="682" ></canvas>
+				</div>
+				<div class="frame" >
+					<img id="frame" src="" alt="">
+				</div>
+				<div class="photo_start" style="display: block;">
+					<img id="btn_start" src="Images/start_btn_nor_en-us.png" alt="" style="opacity: 0.9;">
+                    <div id="take_photo" style="position: absolute; top: 0px; left: 0px; width: 919px; height: 685px; z-index: 101; opacity: 0; background-image: url('Images/start_btn_nor_en-us.png')" onclick="TakePhoto()"></div>
+				</div>
+				<p style="margin: 0;"><img class="number_img" id="number_img" style="display: none;" src="Images/3.png"></p>
+				<div class="email_state" style="display: none;">
+					<img id="email_state" src="Images/email_sending_en-us.png" alt="">
+				</div>
+
+				<ul class="photo_btn">
+					<li><img src="Images/btn_nor_email_en-us.png" id="email-photo" alt="이메일보내기" onclick="ShowKeyboard()"></li>
+					<li><!--<img src="Images/btn_nor_print_en-us.png" alt="포토프린트" onclick="PrintPhoto()">--></li>
+					<li><img src="Images/btn_nor_retake_en-us.png" id="retake-photo" alt="다시촬영하기" onclick="Retake()"></li>
+				</ul>
+				<dl class="photo_frame">
+					<!--<dd><img src="Images/btn_frame06.png" alt="프레임1" onclick="SelectFrame(6)"></dd>
+					<dd><img src="Images/btn_frame07.png" alt="프레임2" onclick="SelectFrame(7)"></dd>
+					<dd><img src="Images/btn_frame08.png" alt="프레임3" onclick="SelectFrame(8)"></dd>-->
+				</dl>
+
+				<div id="keyboard" class="keyboard" style="display: none">
+					<div class="top">
+						<font class="address" size="6px"><a id="address" onmousedown="return false"></a></font>
+						<img src="Images/keyboard/send.png" onclick="SendEmail()"> &nbsp;
+						<img src="Images/keyboard/cancel.png" onclick="HideKeyboard()">
+					</div>
+					<div class="wrap" >
+						<div class="line01">
+							<img src="Images/keyboard/1.png" onclick="keyboard('1')">
+							<img src="Images/keyboard/2.png" onclick="keyboard('2')">
+							<img src="Images/keyboard/3.png" onclick="keyboard('3')">
+							<img src="Images/keyboard/4.png" onclick="keyboard('4')">
+							<img src="Images/keyboard/5.png" onclick="keyboard('5')">
+							<img src="Images/keyboard/6.png" onclick="keyboard('6')">
+							<img src="Images/keyboard/7.png" onclick="keyboard('7')">
+							<img src="Images/keyboard/8.png" onclick="keyboard('8')">
+							<img src="Images/keyboard/9.png" onclick="keyboard('9')">
+							<img src="Images/keyboard/0.png" onclick="keyboard('0')">
+							<img src="Images/keyboard/delete.png" onclick="keyboard('bs')">
+						</div>
+
+						<div class="line02">
+							<img src="Images/keyboard/q.png" onclick="keyboard('q')">
+							<img src="Images/keyboard/w.png" onclick="keyboard('w')">
+							<img src="Images/keyboard/e.png" onclick="keyboard('e')">
+							<img src="Images/keyboard/r.png" onclick="keyboard('r')">
+							<img src="Images/keyboard/t.png" onclick="keyboard('t')">
+							<img src="Images/keyboard/y.png" onclick="keyboard('y')">
+							<img src="Images/keyboard/u.png" onclick="keyboard('u')">
+							<img src="Images/keyboard/i.png" onclick="keyboard('i')">
+							<img src="Images/keyboard/o.png" onclick="keyboard('o')">
+							<img src="Images/keyboard/p.png" onclick="keyboard('p')">
+						</div>
+
+						<div class="enter" >
+							<img src="Images/keyboard/enter.png" onclick="send('1')">
+						</div>
+
+						<div class="line03">
+							<img src="Images/keyboard/a.png" onclick="keyboard('a')">
+							<img src="Images/keyboard/s.png" onclick="keyboard('s')">
+							<img src="Images/keyboard/d.png" onclick="keyboard('d')">
+							<img src="Images/keyboard/f.png" onclick="keyboard('f')">
+							<img src="Images/keyboard/g.png" onclick="keyboard('g')">
+							<img src="Images/keyboard/h.png" onclick="keyboard('h')">
+							<img src="Images/keyboard/j.png" onclick="keyboard('j')">
+							<img src="Images/keyboard/k.png" onclick="keyboard('k')">
+							<img src="Images/keyboard/l.png" onclick="keyboard('l')">
+						</div>
+
+						<div class="line04">
+							<img src="Images/keyboard/z.png" onclick="keyboard('z')">
+							<img src="Images/keyboard/x.png" onclick="keyboard('x')">
+							<img src="Images/keyboard/c.png" onclick="keyboard('c')">
+							<img src="Images/keyboard/v.png" onclick="keyboard('v')">
+							<img src="Images/keyboard/b.png" onclick="keyboard('b')">
+							<img src="Images/keyboard/n.png" onclick="keyboard('n')">
+							<img src="Images/keyboard/m.png" onclick="keyboard('m')">
+							<img src="Images/keyboard/..png" onclick="keyboard('.')">
+							<img src="Images/keyboard/exclamation.png" onclick="keyboard('!')">
+							<img src="Images/keyboard/question.png" onclick="keyboard('?')">
+						</div>
+
+						<div class="line05">
+							<img src="Images/keyboard/-.png" onclick="keyboard('-')">
+							<img src="Images/keyboard/_.png" onclick="keyboard('_')">
+							<img src="Images/keyboard/spacebar.png" onclick="keyboard(' ')">
+							<img src="Images/keyboard/@.png" onclick="keyboard('@')">
+							<img src="Images/keyboard/gmail.png" onclick="keyboard('gmail.com')">
+							<img src="Images/keyboard/com.png" onclick="keyboard('.com')">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //contents -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //wrapper -->
+<div class="footer">
+	<img src="images/footer.png" width="700">
+</div>
+
+<div id="dialog-overlay"></div>
+<div id="dialog-box">
+
+</div>
+
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
+</body>
+<script type="application/javascript">
+    if(readCookie("CurrentLanguage") === "English")
+    {
+        LanguageChange('english');
+    }
+    else if(readCookie("CurrentLanguage") === "Spanish")
+    {
+        LanguageChange('spanish');
+    }
+</script>
+</html>

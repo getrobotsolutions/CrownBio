@@ -1,0 +1,681 @@
+  html{
+        position: relative;
+        min-height: 83.8%;
+      }
+      body{
+        margin: 0 0 100px;
+        line-height: 1;
+      }
+      footer{
+       /* position:absolute;*/
+        left:0;
+        bottom:0;
+        height:90px;
+        width:100%;
+        border-top: 8px solid #f6ad11;
+      }
+    .container{
+          padding-top: 0px;
+          padding-bottom: 10px;
+          width: 1011px;
+          margin-left: 17px;
+    }
+    .row{
+      padding-top:0px;
+      padding-bottom:32px;
+      margin-left: 30px;
+    }
+   
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        width: 70%;
+        margin: auto;
+    }
+    .carousel img {
+          width:100% !important;
+          min-width:100 !important;
+          height: auto;
+      }
+      .fixed-height{
+        max-height: 400px;
+      }
+      .jumbotron{
+        color:#5c5c5c;
+        background-color: #fdfdfd;
+        line-height: 18px;
+        padding-top: 75px;
+        padding-bottom: 100px;
+      }
+      .jumbotron p {
+          margin-bottom: 15px;
+          font-size: 36px;
+          font-weight: 700;
+          font-family: calibri;
+          color: darkslategray;
+      }
+      .img-responsive{
+        position: relative;
+        z-index: 99;
+            margin-top: -109px;
+        margin-left: 44px;
+        width: 441px;
+        height: auto;
+        
+            /*height: 117px;*/
+      }
+      .navigate{
+        font-size: 25px;
+      }
+      .navbar{
+        margin-top:-30px;
+            margin-bottom: 0px;
+      }
+      .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+      .navbar .navbar1 {
+        text-align: center;
+        font-size:10px;
+    }
+    .navbar-default {
+      background-color: #331A67;
+       border-color: #236B8E; 
+    }
+
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+        color: white;
+        background-color: #104E8B;
+    }
+    .navbar-default .navbar-nav>li>a {
+        color: white;
+    }
+    .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+        background-color: #104E8B;
+        border-color: #337ab7;
+    }
+      span{
+        width:82px;
+      }
+
+     .btn-warning1.btn-warning1:not( :hover )
+      {
+          color: #fff;
+          background-color:#B23AEE;
+          border-color:#9932CD ;
+      }
+
+   .btn-warning1:hover{
+      color: #fff;
+      background-color:#9932CC;
+    }
+    .icon1{
+          z-index: 5;
+      padding-top: 40px;
+      padding-bottom: 85px;
+      line-height: 25px;
+          margin-bottom: -4.6px;
+          background-color: rgba(255, 255, 255, 0.85);
+    }
+    .bmg
+    {
+        /*background-image: url('../images/muscat-oman.jpg');
+        background-color: white;*/
+        background-repeat: no-repeat;
+        background-size: 161%;
+    height: 1196px;
+    background-position-x: -294px;
+    }
+    span.glyphicon {
+        font-size: 1.5em;
+    }
+    .glyphicon{
+      line-height: 1.3;
+      width: 134px;
+      height: 23px;
+      display: inline;
+    }
+    .txt{
+
+          font-size: 18px;
+        font-family: calibri;
+
+    display: inline-block;
+      transform: scale(2.5, 2.5);
+      -webkit-transform: scale(2.5, 2.5); /* Safari and Chrome */
+      -moz-transform: scale(2.5, 2.5); /* Firefox */
+      -ms-transform: scale(2.5, 2.5); /* IE 9+ */
+      -o-transform: scale(2.5, 2.5); /* Opera */
+  
+    }
+    .flag{
+      height:37px;
+      width:37px;
+    }
+    .btn-group-lg>.btn, .btn-lg {
+        padding: 35px 54px;
+        line-height: 0.83;
+        height: 236px;
+    }
+    .alert {
+        text-align: center;
+        font-size: 53px;
+        font-family: OpenSans-Regular;
+        padding: 35px;
+        width: 920px;
+        margin-left: 16px;
+        margin-bottom: 0px;
+        font-stretch: ultra-expanded;
+        cursor: pointer; cursor: hand;
+    }
+
+    .nav>li>a {
+            padding: 16px 15px;
+        font-size: 17px;
+         font-family: arial;
+    }
+
+    .explore{
+       font-size: 32px;
+    font-family: calibri;
+    padding-top: 20px;
+    background-color: #f8f8f8;
+    color: darkgrey;
+    text-align: center;
+    padding-bottom:14px;
+    }
+
+    #content_term{
+          margin-left: -183px;
+          padding-top: 11px;
+    }
+    #content_air{
+     font-size: 40px;
+    color: #73787c;
+    margin-right: 10px;
+    }
+    #HF{
+          height: 346px;
+           width: 249px;
+    }
+
+    .alert-success {
+        color: white;
+        background-color: #dff0d8;
+        border-color: #666666;
+    }
+
+    .dropdown-menu {
+         right: 0;left:unset;
+         min-width: 80px;
+
+    }
+    .icon-img{
+      height: 200px;
+      width:209px;
+      padding-left:20px;
+      padding-top:50px;
+      background: transparent;
+      background-color:black;
+      color: #fff;
+      opacity: 0.5;
+      border: 3px solid black;
+    }
+     .icon-title{
+      position: absolute;
+      top: 58px;
+        width: 257px;
+        height: 100px;
+            font-family: OpenSans-Regular;
+            font-size: 40px;
+            color: white;
+            font-style: bold;
+            padding-left: 0px;
+            padding-top: 35px;
+            text-align: center;
+            font-weight: 200;
+    }
+
+    .parent{
+         width: 290px;
+         height: 290px;
+         line-height: 33px;
+         text-align: center;
+         border-radius: 25px;
+   }
+ 
+   
+    .child{
+        position: relative;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        width: 420px;
+        /*height: 175px;*/
+    }
+    .img-child{
+              /* position: relative; */
+    /* padding-right: 10px; */
+    padding-top: 20px;
+    /* padding-left: 60px; */
+    width: 184px;
+    /* height: 178px;
+    }
+    .navbar .vdivider {
+      height: 86px;
+      margin: 0 13px -1px -12px;
+      border-left: 1px solid #6CA6CD;
+      /*border-right: 1px solid #ffffff;*/
+      }
+
+/*      a:hover {
+         color: red; 
+         text-decoration: none; 
+      }*/
+
+      .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+         color: white; 
+         background-color: #104E8B; 
+      }
+
+
+      @keyframes flip {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+            transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  40% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+            transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    
+  }
+  50% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+            transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+   
+  }
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+            transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+   }
+  100% {
+    -webkit-transform: perspective(400px);
+            transform: perspective(400px);
+    
+  }
+}
+.flip {
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+  -webkit-animation-name: flip;
+          animation-name: flip;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+@-webkit-keyframes rotateInDownLeft {
+  0% {
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+            transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+}
+@keyframes rotateInDownLeft {
+  0% {
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+            transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform-origin: top bottom;
+            transform-origin: top bottom;
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+}
+.rotateInDownLeft {
+  -webkit-animation-name: rotateInDownLeft;
+          animation-name: rotateInDownLeft;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+@-webkit-keyframes rotateInLeftDown{
+  0% {
+    -webkit-transform-origin: top bottom;
+            transform-origin: top bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+            transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform-origin: top bottom;
+            transform-origin: top bottom;
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+}
+@keyframes rotateInLeftDown {
+  0% {
+    -webkit-transform-origin: top bottom;
+            transform-origin: top bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -180deg);
+            transform: rotate3d(0, 0, 1, -180deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform-origin: top bottom;
+            transform-origin: top bottom;
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+}
+.rotateInLeftDown {
+  -webkit-animation-name: rotateInLeftDown;
+          animation-name: rotateInLeftDown;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.carousel-inner.anim > .active {
+  left: 0;
+}
+.carousel-inner.anim > .next,
+.carousel-inner.anim > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel-inner.anim > .next.left {
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+  -webkit-animation-name: rotateInLeftDown;
+          animation-name: rotateInLeftDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  left: 0;
+}
+.carousel-inner.anim > .prev.right {
+  -webkit-animation-name: rotateInDownLeft;
+          animation-name: rotateInDownLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  left: 0;
+}
+.carousel-inner.anim > .active.left {
+  left: -100%;
+}
+.carousel-inner.anim > .active.right {
+  left: 100%;
+}
+.nopadding{padding: 0 !important;}
+.nomargin{margin: 0 !important;}
+.right{float: right; position: absolute;right: 0}
+
+#temp{    display: block;
+        width: 183px;
+    float: right;
+    margin-right: 10px;
+    font-size: 17px;}
+body{
+  /*margin:120px auto;
+  display:block;
+  width:400px;
+  height:400px;
+  position: relative;*/
+}
+.bmg1{
+  position: relative;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
+.bmg1::before{
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  left: -50%;
+  top: -50%;  
+  
+  background: radial-gradient(circle at 50px 50px, white 10%,
+                        rgba(110, 125, 123, 0.7) 12%,
+                        white 14%,
+  
+                        white 30%,
+                        rgba(110, 125, 123, 0.7) 32%,
+                        white 34%,
+  
+                        white 60%,
+                        rgba(110, 125, 123, 0.7) 62%,
+                        transparent 64%
+                                            ) 30px 0,
+  
+        radial-gradient(circle at 50px 50px, white 10%,
+                        rgba(110, 125, 123, 0.7) 12%,
+                        white 14%,
+  
+                        white 40%,
+                        rgba(110, 125, 123, 0.7) 42%,
+                        white 44%,
+  
+                        white 60%,
+                        rgba(110, 125, 123, 0.7) 62%,
+                        transparent 64%
+                                            ) 80px 50px;
+  background-size: 100px 100px;
+  animation: changingBckSze 500s infinite linear, pumping 500s infinite linear, rotateTime 1000s infinite linear;
+
+ 
+
+}
+
+@keyframes changingBckSze{
+  from{
+    background-poistion: 30px 0,
+  
+        radial-gradient(circle at 50px 50px, white 10%,
+                        rgba(110, 125, 123, 0.7) 12%,
+                        white 14%,
+  
+                        white 40%,
+                        rgba(110, 125, 123, 0.7) 42%,
+                        white 44%,
+  
+                        white 60%,
+                        rgba(110, 125, 123, 0.7) 62%,
+                        transparent 64%
+                                            ) 80px 50px;
+    background-size: 100px 100px;
+  }
+
+
+  50%{
+    background: radial-gradient(circle at 50px 50px, white 10%,
+                        rgba(110, 125, 123, 0.7) 12%,
+                        white 14%,
+  
+                        white 30%,
+                        rgba(110, 125, 123, 0.7) 32%,
+                        white 34%,
+  
+                        white 60%,
+                        rgba(110, 125, 123, 0.7) 62%,
+                        transparent 64%
+                                            ) 30px -100px,
+  
+        radial-gradient(circle at 50px 50px, white 10%,
+                        rgba(110, 125, 123, 0.7) 12%,
+                        white 14%,
+  
+                        white 40%,
+                        rgba(110, 125, 123, 0.7) 42%,
+                        white 44%,
+  
+                        white 60%,
+                        rgba(110, 125, 123, 0.7) 62%,
+                        transparent 64%
+                                            ) 80px 50px;
+    background-size: 100px 100px;
+  }
+  
+ 
+  
+
+   60%{
+    background: radial-gradient(circle at 50px 50px, white 10%,
+                        rgba(110, 125, 123, 0.7) 12%,
+                        white 14%,
+  
+                        white 30%,
+                        rgba(110, 125, 123, 0.7) 32%,
+                        white 34%,
+  
+                        white 60%,
+                        rgba(110, 125, 123, 0.7) 62%,
+                        transparent 64%
+                                            ) 30px -100px,
+  
+        radial-gradient(circle at 50px 50px, white 10%,
+                        rgba(110, 125, 123, 0.7) 12%,
+                        white 14%,
+  
+                        white 40%,
+                        rgba(110, 125, 123, 0.7) 42%,
+                        white 44%,
+  
+                        white 60%,
+                        rgba(110, 125, 123, 0.7) 62%,
+                        transparent 64%
+                                            ) 80px 50px;
+    background-size: 100px 100px;
+  }
+  
+  
+
+
+  to{
+    background: radial-gradient(circle at 50px 50px, white 10%,
+                        rgba(110, 125, 123, 0.7) 12%,
+                        white 14%,
+  
+                        white 30%,
+                        rgba(110, 125, 123, 0.7) 32%,
+                        white 34%,
+  
+                        white 60%,
+                        rgba(110, 125, 123, 0.7) 62%,
+                        transparent 64%
+                                            ) -70px -100px,
+  
+        radial-gradient(circle at 50px 50px, white 10%,
+                        rgba(110, 125, 123, 0.7) 12%,
+                        white 14%,
+  
+                        white 40%,
+                        rgba(110, 125, 123, 0.7) 42%,
+                        white 44%,
+  
+                        white 60%,
+                        rgba(110, 125, 123, 0.7) 62%,
+                        transparent 64%
+                                            ) 180px 50px;
+
+    background-size: 100px 100px;   
+  }
+}
+
+@keyframes pumping{
+  from{
+    /* transform: scale(1); */
+  }
+
+  50%{
+    transform: scale(1);
+  }
+
+  55%{
+    transform: scale(1.1);
+  }
+
+  65%{
+    transform: scale(1);
+  }
+
+  to{
+
+  }
+}
+
+@keyframes rotateTime{
+  from{
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+
+#slide {
+    /*position: absolute;
+    left: -600px;
+    width: 600px;
+    height: 370px;*/
+    background: white;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+
+ #dialog-overlay {
+
+  /* set it to fill the whil screen */
+  width:100%; 
+  height:100%;
+  
+  /* transparency for different browsers */
+  filter:alpha(opacity=50); 
+  -moz-opacity:0.5; 
+  -khtml-opacity: 0.5; 
+  opacity: 0.5; 
+  background:#000; 
+
+  /* make sure it appear behind the dialog box but above everything else */
+  position:absolute; 
+  top:0; left:0; 
+  z-index:3000; 
+
+  /* hide it by default */
+  display:none;
+}
+
+

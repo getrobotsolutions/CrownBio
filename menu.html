@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/custom.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="maincontents.js"></script>
+    <script src="boots/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="boots/css/bootstrap.min.css">
+    
+    <link href="css/Main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body  onbeforeunload="JSUnload()" ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;">
+
+  <header onclick="">
+    <div class="config" onclick="FC_ContentsCall('Config')">
+        <img src="assets/config.png" height="80">
+    </div>
+    <!--<div class="img-home" onclick="location.href ='maincontents.htm'"></div>-->
+    <div class="logo">
+      <img src="assets/logo.png" onclick="FC_ContentsCall('Home')">
+    </div>
+
+  </header>
+  <nav></nav>
+  <section class="main-content">
+    <div class="navigation">
+
+      <div class="col-sm-6 navigation-box" style="" onclick="FC_ContentsCall('Videos')">
+        <img src="assets/icons/video-player-5.png" class="navigation-icon">
+        <h2 class="navigation-text">VIDEOS</h2>        
+      </div>
+      
+      <div class="col-sm-6 navigation-box" style="" onclick="FC_ContentsCall('Consulting')">
+        <img src="assets/icons/consulting.png" class="navigation-icon" width="250">
+        <h2 class="navigation-text">Ask Us A Question</h2>
+      </div>
+
+      <div class="col-sm-6 navigation-box" style="" onclick="FC_ContentsCall('Selfie')">
+        <img src="assets/icons/camera-4.png" class="navigation-icon">
+        <h2 class="navigation-text">TAKE-A-PICTURE</h2>
+      </div>
+
+      <div class="col-sm-6 navigation-box" style="" onclick="FC_ContentsCall('Slotmachine')">
+        <img src="assets/icons/slot-machine-with-sevens-3.png" class="navigation-icon" width="250">
+        <h2 class="navigation-text">SLOT MACHINE</h2>
+      </div>    
+  </section>
+
+  <footer>
+    <img src="assets/footer.png" width="700">
+  </footer>
+  <div id="dialog-overlay"></div>
+  <div id="dialog-box">
+  </div>
+  <style type="text/css">
+    nav {
+      height: 0px;
+    }
+    .main-content {
+      height: 1400px;
+      margin-top: 0;
+      padding-top: 100px;
+      /*border-bottom: 10px solid #1f3d7c;
+      background-image: url(assets/background.png);
+      background-size: 1520px;*/
+  }
+  </style>
+  <script type="text/javascript">
+    /*function redirectToSS(){
+      window.location.href = "maincontents.htm";
+    }
+    var tempTime=setTimeout(redirectToSS,10000);
+
+    $(document).click(function(event) {
+        clearTimeout( tempTime );
+        tempTime=setTimeout(redirectToSS,240000);
+    });*/
+  </script>
+</body>
+</html>

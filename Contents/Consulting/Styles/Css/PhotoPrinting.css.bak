@@ -1,0 +1,121 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-repeat: no-repeat;
+	overflow : hidden;
+}
+
+.home {
+	text-align: right;
+	margin-top: 45px;
+	margin-right: 20px;
+}
+
+
+canvas  {
+	position: absolute;
+	margin-top: 30px;
+	margin-left: -943px;
+}
+
+.pannel {
+	margin-top: 320px;
+	text-align: center;
+}
+
+.email {
+	position: absolute;
+	margin-top: 45px;
+	margin-left: -927px;
+}
+
+.print {
+	position: absolute;
+	margin-top: 45px;
+	margin-left: -627px;
+}
+
+.retake {
+	position: absolute;
+	margin-top: 45px;
+	margin-left: -327px;
+}
+
+.capture {
+	position: absolute;
+	margin-top: 23px;
+	margin-left: -948px;
+}
+
+.btn_pannel{
+	position: absolute;
+	margin-top: 23px;
+	margin-left: -948px;
+}
+
+.number_img {
+	position: absolute;
+	margin-top: 170px;
+	margin-left: -577px;
+}
+
+.keyboard {	
+	text-align: center;
+	background-image: url('../../Resources/Images/keyboard/keyboard_bg.png');
+	background-repeat: no-repeat;
+	width: 1080px;
+	margin-top: -500px;
+	position: absolute;
+}
+
+.top{
+	margin-right: 10px;
+	margin-top: 5px;
+	padding-top: 15px;
+	text-align: right;
+}
+
+.address {
+	margin-left: 100px;
+	margin-top: 30px;
+	position: absolute;
+}
+
+.wrap {
+	margin-top: 30px;
+}
+
+.line01 {
+	
+}
+
+.line02 {
+	position:absolute;
+	margin-left: 60px;
+}
+
+.line03 {
+	margin-right: 80px;
+	margin-top: -95px;
+}
+
+.line04 {
+	margin-right: 40px;
+}
+
+.line05 {
+	
+}
+
+.enter {
+	margin-left: 880px;
+	margin-top: 3px;
+}
+
+#overlap{
+	position: absolute;
+	top:477px;
+	left:88px;
+	width:900px;
+	height:610px;
+}

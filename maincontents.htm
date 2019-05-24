@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/custom.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="maincontents.js"></script>
+    <script src="boots/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="boots/css/bootstrap.min.css">
+    
+    <link href="css/Main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+
+<body  onbeforeunload="JSUnload()" ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;">
+
+  <header onclick="">
+    <div class="config" onclick="FC_ContentsCall('Config')">
+        <img src="assets/home-config.png" height="80">
+    </div>
+    <!--<div class="img-home" onclick="location.href ='maincontents.htm'"></div>-->
+    <div class="logo">
+      <img src="assets/logo-white.png" onclick="location.href='menu.html'" width="">
+    </div>
+
+  </header>
+
+  <section class="main-content">
+    <h1 class="welcome-text">SCAN YOUR</br>BADGE TO BEGIN</h1>
+    <img src="assets/icons/qr-code-1.png" style="position: relative;top: 460px;left: 670px;width: 355px;">
+
+    
+  </section>
+
+  <footer>
+    <img src="assets/footer.png" width="700">
+  </footer>
+  <div id="dialog-overlay"></div>
+  <div id="dialog-box">
+  </div>
+  <style type="text/css">
+    .welcome-text{
+          color: #253667;
+    font-size: 80px;
+    position: relative;
+    top: 750px;
+    text-align: center;
+    width: 600px;
+    font-weight: bold;
+    }
+
+  .main-content {
+    height: 1400px;
+    margin-top: 0;
+    padding-top: 100px;
+    background-image: url(assets/home-bg.png);
+  background-size: 1080px;
+  background-position:  0 -200px;
+  background-repeat: no-repeat;
+    /*border-bottom: 10px solid #1f3d7c;
+    background-image: url(assets/background.png);
+    background-size: 1520px;*/
+}
+header{
+  background-color: #253667;
+}
+body{
+  
+  
+}
+header .logo img {
+  width: 550px;
+}
+  </style>
+  <script type="text/javascript">
+    /*function redirectToSS(){
+      window.location.href = "maincontents.htm";
+    }
+    var tempTime=setTimeout(redirectToSS,10000);
+
+    $(document).click(function(event) {
+        clearTimeout( tempTime );
+        tempTime=setTimeout(redirectToSS,240000);
+    });*/
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+@font-face{
+    font-family:noto sans thin;
+    src:url('../../Font/NotoSans-Thin.woff') format('woff');
+}
+
+@font-face{
+    font-family:noto sans;
+    src:url('../../Font/NotoSans-Regular.woff') format('woff');
+}
+
+@font-face{
+    font-family:noto sans mid;
+    src:url('../../Font/NotoSans-Medium.woff') format('woff');
+}
+@font-face{
+    font-family:noto sans bold;
+    src:url('../../Font/NotoSans-Bold.woff') format('woff');
+}

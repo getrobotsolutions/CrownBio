@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/custom.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
+    <script src="../../boots/js/bootstrap.min.js"></script> 
+    
+
+  <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
+  <link href="css/eat.css" rel="stylesheet" type="text/css" />
+  <script src="http://robotaisolutions.com/robot-work/Reinhausen/" type="text/javascript"></script>
+<style type="text/css">
+    .wrap {
+        padding-top: 0px;
+    }
+    .main-content {
+        margin-top: 0;
+            height: 1340px;
+    }
+    iframe{
+        border: 0;
+    }
+</style>
+
+</head>
+
+
+<body >
+
+<header >
+    <div class="logo">
+        <img onclick="FC_ContentsCall('Menu')" src="../../assets/logo.png">
+    </div>
+    
+</header>
+
+<nav>
+    <span class="home-text" onclick="FC_ContentsCall('Menu')"><img class="home" src="../../assets/icons/home.png" alt="home" ></span>
+    <!--<h2 class="lang-text">Choose a Language</h2>
+    <div class="nav-language">
+        <button onclick="LanguageChange('english');" id="btn_english" class="btn-english">English</button>
+    </div>-->
+</nav>
+
+<section class="main-content">
+   <div class="bmg">
+        <div class="wrap" >
+            <iframe src="https://robotaisolutions.com/slotmachine/game_bootstrapper.php" width="1080" height="1000"></iframe>        
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <img src="../../assets/footer.png" width="700">
+</footer>
+<div id="dialog-overlay"></div>
+<div id="dialog-box">
+</div>
+
+</body>
+<script type="application/javascript">
+    if(readCookie("CurrentLanguage") === "English")
+    {
+        LanguageChange('english');
+    }
+    else if(readCookie("CurrentLanguage") === "Spanish")
+    {
+        LanguageChange('spanish');
+    }
+    //ShowImgPopup("img.jpeg");
+
+    
+</script>
+
+<script language="JavaScript" type="text/javascript" src="js/eat.js"></script>
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
+
+<script language="javascript" type="text/javascript">
+    window.history.forward();
+</script>
+
+<style type="text/css">
+    ul{list-style-type: none;}
+</style>
+
+</html>

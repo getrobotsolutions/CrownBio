@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* Common */
+
+* {margin:0; padding:0;/* font-family:"NanumGothic","돋움",Dotum,dotum,"굴림",Gulim,gulim,sans-serif;*/ }
+body {font-size:12px; color:#888; width: 1080px; height: 1920px;  }
+input,select,textarea,option,table,th,td {font-size:12px; color:#888;}
+li {list-style:none;}
+img,fieldset {border:0;}
+a:link,a:visited {text-decoration:none; color:#676767;}
+a:hover,a:active,a:focus {text-decoration:none; color:#ff6900;}
+hr,caption {display:none;}
+address, em {font-style:normal;}
+
+.blind {display:block; position:absolute; left:0; top:-15000px; overflow:hidden;}
+legend {width:0; height:0; font-size:0; display:block; position:absolute; left:0; top:-15000px; overflow:hidden;}
+
+/* Class */
+.test {border:1px solid red;}
+
+/* 폰트 */
+@font-face {
+    font-family: 'NanumGothic';
+    src: url('../Styles/Fonts/NanumGothic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NanumGothicBold';
+    src: url('../Styles/Fonts/NanumGothicBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NanumGothicExtraBold';
+    src: url('../Fonts/NanumGothicExtraBold.woff') format('woff');
+}
+
+/*  wrapper */
+#wrapper {
+    width: 1080px;
+    height: 1787px;
+    overflow: hidden;
+}
+
+/*  container */
+#container {width: 1080px; height: 1920px; position: relative;}
+
+
+
+
+/************************ 이승준 *****************************/
+/* 스크롤바 제거 */
+body
+{
+    //overflow: hidden;
+}
+
+/* header */
+#s_top {background:url(../../../RobotDance/Images/top_bg.png)no-repeat; width: 1080px; height: 175px; box-shadow: 0px 5px 15px rgba(149,27,19,.5); position: relative;}
+#home {width: 97px; height: 107px; position: absolute; top: 38px;; right: 54px;}
+#title {font-size: 68px; font-family: noto sans mid; color: #fff; text-shadow: 5px 5px 3px rgba(0, 0, 0, .1); text-align: center; padding-top: 35px;}
+
+
+#s_body 
+{
+	position: relative;
+	width: 1080px;
+	height: 1137px;
+}
+#s_bottom 
+{
+	position: relative;
+	width: 1080px;
+	height: 608px;
+	background-color: #000;
+}
+
+/* 팝업창 백그라운드 */
+#wrapper #over
+{
+    background: rgba(0, 0, 0, 0.7);
+}
+/************************ 이승준 *****************************/

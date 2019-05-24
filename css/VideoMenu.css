@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+div.videomenu {
+	position: absolute;
+    top: 1319px;
+	width: auto;
+	height: 554px;
+
+
+	
+}
+
+table.videotable {
+	height: 100%;
+	width: auto;
+	margin-bottom: 70px;
+	text-align: center;
+
+	
+}
+
+td.videomenu01 {
+	width: 280px;
+	padding-left: 10px;
+	
+}
+
+td.videomenu02 {
+	width: 240px;
+}
+
+td.videomenu03 {
+	width: 242px;
+}
+
+td.videomenu04 {
+	width: 226px;
+}
+
+a {	
+	color: white; 
+	font-size: 25px;
+}

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/custom.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
+    <script src="../../boots/js/bootstrap.min.js"></script> 
+    
+
+  <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
+  <link href="css/eat.css" rel="stylesheet" type="text/css" />
+  <script src="http://robotaisolutions.com/robot-work/Reinhausen/" type="text/javascript"></script>
+<style type="text/css">
+
+    text{
+        font-family:Helvetica, Arial, sans-serif;
+        font-size:22px;
+        pointer-events:none;
+    }
+    #chart{
+        position:absolute;
+        width:500px;
+        height:500px;
+        top: 550px;
+        left: 200px;
+    }
+    #question{
+        position: absolute;
+        width:550px;
+        height:500px;
+        top: 230px;
+        left: 250px;
+    }
+    #question h1{
+        font-size: 50px;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        top:50%;
+        -webkit-transform:translate(0,-50%);
+                transform:translate(0,-50%);
+    }
+    </style>
+
+</head>
+
+
+<body >
+
+<header >
+    <div class="logo">
+        <img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png">
+    </div>
+    
+</header>
+
+<nav>
+    <span class="home-text" onclick="FC_ContentsCall('Home')"><img class="home" src="../../assets/icons/home.png" alt="home" ></span>
+    <!--<h2 class="lang-text">Choose a Language</h2>
+    <div class="nav-language">
+        <button onclick="LanguageChange('english');" id="btn_english" class="btn-english">English</button>
+    </div>-->
+</nav>
+
+<section class="main-content">
+   <div class="bmg">
+        <div class="wrap" >
+            <div id="chart"></div>
+            <div id="question"><h1></h1></div>
+            <div id="demo"></div>
+    
+    <script src="js/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        var padding = {top:20, right:40, bottom:0, left:0},
+            w = 700 - padding.left - padding.right,
+            h = 700 - padding.top  - padding.bottom,
+            r = Math.min(w, h)/2,
+            rotation = 0,
+            oldrotation = 0,
+            picked = 100000,
+            oldpick = [],
+            color = d3.scale.category20();//category20c()
+            //randomNumbers = getRandomNumbers();
+        //http://osric.com/bingo-card-generator/?title=HTML+and+CSS+BINGO!&words=padding%2Cfont-family%2Ccolor%2Cfont-weight%2Cfont-size%2Cbackground-color%2Cnesting%2Cbottom%2Csans-serif%2Cperiod%2Cpound+sign%2C%EF%B9%A4body%EF%B9%A5%2C%EF%B9%A4ul%EF%B9%A5%2C%EF%B9%A4h1%EF%B9%A5%2Cmargin%2C%3C++%3E%2C{+}%2C%EF%B9%A4p%EF%B9%A5%2C%EF%B9%A4!DOCTYPE+html%EF%B9%A5%2C%EF%B9%A4head%EF%B9%A5%2Ccolon%2C%EF%B9%A4style%EF%B9%A5%2C.html%2CHTML%2CCSS%2CJavaScript%2Cborder&freespace=true&freespaceValue=Web+Design+Master&freespaceRandom=false&width=5&height=5&number=35#results
+        var tick = new Audio('tick.mp3');
+
+        var quantity= new Array( );
+        
+        if(readCookie("quantity")){
+            quantity=readCookie("quantity");
+            
+        }
+        else{
+            var quantity=[1,2,3,4,7,6,7,15,20,30,100];
+            writeCookie("CurrentLanguage", quantity, 30);
+        }
+        
+        function checkQuantity(){
+            for (var i = 0; i < quantity.length;  i++) {
+               // alert(quantity[i]);
+                if(quantity[i]<=0){
+
+                    data.splice(i, 1);
+
+                }
+            }
+            
+        }
+        /*var obj=null;
+        var data=[];
+        $.ajax({
+            url:"http://localhost/valeo/",
+            type:"post",
+                success: function(response) {
+                          //console.log(data[0].prize);
+                          //obj=JSON.parse(data);
+                          //console.log(response[0].label);
+                          //theWheel.segments= Object.assign({},data)
+                          //console.log(theWheel);
+                          //if(data.response=='success'){
+                            //var JSONObject = response[0].toString();
+                            //console.log(JSONObject);
+                            //obj=response;
+                            //data[4].push(response[0]);
+                            //data[0].push(data[0]);
+                            //var parsed = JSON.parse(response);
+                        
+                        }
+                            
+                    });      
+       
+        /*var data = [
+                     // padding
+                    {"label":"Robot bendable",  "value":3,  "question":"Robot bendable"}, //font-family
+                     //Robot wind-ups
+                    
+                    {"label":"CDS floor stands",  "value":6,  "question":"CDS floor stands"},
+                    
+                    {"label":"Robot gummies",  "value":8,  "question":"Robot gummies"},
+                    {"label":"Banner stands",  "value":8,  "question":"Banner stands"},
+                    {"label":"$10 Amazon cards",  "value":8,  "question":"$10 Amazon cards"},
+                    {"label":"$5 Starbucks cards",  "value":8,  "question":"$5 Starbucks cards"},
+                    {"label":"Enter drawing for a $100 Amazon card",  "value":8,  "question":"$100 Amazon card drawing"}
+                     //comma
+        ];
+        $("#demo").html('<ul><li>Robot Eraser: '+quantity[0]+'</li><li>Robot bendable:'+quantity[1]+'</li><li>Robot wind-ups: '+quantity[2]+'</li><li>$50 Starbucks gift cards: '+quantity[3]+'</li><li>CDS floor stands: '+quantity[4]+'</li><li>Robot stickers: '+quantity[5]+'</li><li>Robot gummies: '+quantity[6]+'</li></li><li>Banner stands: '+quantity[7]+'</li></li><li>$10 Amazon cards: '+quantity[8]+'</li></li><li>$5 Starbucks cards: '+quantity[9]+'</li></li><li>$100 Amazon card: '+quantity[10]+'</li></ul>');*/
+        checkQuantity();
+        var svg = d3.select('#chart')
+            .append("svg")
+            .data([data])
+            .attr("width",  w + padding.left + padding.right)
+            .attr("height", h + padding.top + padding.bottom);
+        var container = svg.append("g")
+            .attr("class", "chartholder")
+            .attr("transform", "translate(" + (w/2 + padding.left) + "," + (h/2 + padding.top) + ")");
+        var vis = container
+            .append("g");
+            
+        var pie = d3.layout.pie().sort(null).value(function(d){return 1;});
+        // declare an arc generator function
+        var arc = d3.svg.arc().outerRadius(r);
+        // select paths, use arc generator to draw
+        var arcs = vis.selectAll("g.slice")
+            .data(pie)
+            .enter()
+            .append("g")
+            .attr("class", "slice");
+            
+        arcs.append("path")
+            .attr("fill", function(d, i){ return color(i); })
+            .attr("d", function (d) { return arc(d); });
+        // add the text
+        arcs.append("text").attr("transform", function(d){
+                d.innerRadius = 0;
+                d.outerRadius = r;
+                d.angle = (d.startAngle + d.endAngle)/2;
+                return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")translate(" + (d.outerRadius -10) +")";
+            })
+            .attr("text-anchor", "end")
+            .text( function(d, i) {
+                return data[i].label;
+            });
+        container.on("click", spin);
+        function spin(d){
+            tick.currentTime = 0;
+
+            tick.play();
+            tick.loop=true;
+            container.on("click", null);
+            //all slices have been seen, all done
+            console.log("OldPick: " + oldpick.length, "Data length: " + data.length);
+            if(oldpick.length == data.length){
+                console.log("done");
+                container.on("click", null);
+                return;
+            }
+            var  ps       = 360/data.length,
+                 pieslice = Math.round(1440/data.length),
+                 rng      = Math.floor((Math.random() * 1440) + 360);
+                
+            rotation = (Math.round(rng / ps) * ps);
+            
+            picked = Math.round(data.length - (rotation % 360)/ps);
+            picked = picked >= data.length ? (picked % data.length) : picked;
+            if(oldpick.indexOf(picked) !== -1){
+                d3.select(this).call(spin);
+                return;
+            } else {
+                oldpick.push(picked);
+                
+            }
+            rotation += 90 - Math.round(ps/2);
+            vis.transition()
+                .duration(3000)
+                .attrTween("transform", rotTween)
+                .each("end", function(){
+                    //mark question as seen
+                    d3.select(".slice:nth-child(" + (picked + 1) + ") path")
+                        .attr("fill", "#111");
+                    //populate question
+                    d3.select("#question h1")
+                        .text("Congratulations! You won " + data[picked].question);
+                        //data[picked].value=data[picked].value-1;
+                        //alert(data[picked].value);
+                        var temp=getIndex(data[picked].value);
+                        //alert(data[picked].id);
+                        updateQuantity(data[picked].id);
+                        quantity[temp]=quantity[temp]-1;
+                        /*$("#demo").html('<ul><li>Robot Eraser: '+quantity[0]+'</li><li>Robot bendable:'+quantity[1]+'</li><li>Robot wind-ups: '+quantity[2]+'</li><li>$50 Starbucks gift cards: '+quantity[3]+'</li><li>CDS floor stands: '+quantity[4]+'</li><li>Robot stickers: '+quantity[5]+'</li><li>Robot gummies: '+quantity[6]+'</li></li><li>Banner stands: '+quantity[7]+'</li></li><li>$10 Amazon cards: '+quantity[8]+'</li></li><li>$5 Starbucks cards: '+quantity[9]+'</li></li><li>$100 Amazon card: '+quantity[10]+'</li></ul>');
+                        document.getElementById("demo").innerHTML = quantity.toString();*/
+                    oldrotation = rotation;
+                    tick.loop=false;
+                writeCookie("CurrentLanguage", quantity, 30);
+                    container.on("click", spin);
+                });
+        }
+        //make arrow
+        svg.append("g")
+            .attr("transform", "translate(" + (w + padding.left + padding.right) + "," + ((h/2)+padding.top) + ")")
+            .append("path")
+            .attr("d", "M-" + (r*.15) + ",0L0," + (r*.05) + "L0,-" + (r*.05) + "Z")
+            .style({"fill":"black"});
+        //draw spin circle
+        container.append("circle")
+            .attr("cx", 0)
+            .attr("cy", 0)
+            .attr("r", 60)
+            .style({"fill":"white","cursor":"pointer"});
+        //spin text
+        container.append("text")
+            .attr("x", 0)
+            .attr("y", 15)
+            .attr("text-anchor", "middle")
+            .text("SPIN")
+            .style({"font-weight":"bold", "font-size":"30px"});
+        
+        function getIndex(val){
+            for(var i = 0; i < data.length; i++) {
+                if(data[i].value === val) {
+                return i;
+                }
+            }
+        }
+        
+        function rotTween(to) {
+          var i = d3.interpolate(oldrotation % 360, rotation);
+          return function(t) {
+            return "rotate(" + i(t) + ")";
+          };
+        }
+        function updateQuantity(id) {
+            $.ajax({
+                url:"http://robotaisolutions.com/robot-work/Reinhausen/updateQuantity.php",
+                type:"post",
+                data:{'id':id},
+                success: function(response) {
+
+                        
+                }
+                            
+            }); 
+        }
+
+        
+        function getRandomNumbers(){
+            var array = new Uint16Array(1000);
+            var scale = d3.scale.linear().range([360, 1440]).domain([0, 100000]);
+            if(window.hasOwnProperty("crypto") && typeof window.crypto.getRandomValues === "function"){
+                window.crypto.getRandomValues(array);
+                console.log("works");
+            } else {
+                //no support for crypto, get crappy random numbers
+                for(var i=0; i < 1000; i++){
+                    array[i] = Math.floor(Math.random() * 100000) + 1;
+                }
+            }
+            return array;
+        }
+        
+
+    </script>     
+              </div>
+      </div>
+
+</section>
+
+<footer>
+    <img src="../../assets/footer.png" width="1080" onclick="">
+</footer>
+<div id="dialog-overlay"></div>
+<div id="dialog-box">
+</div>
+
+</body>
+<script type="application/javascript">
+    if(readCookie("CurrentLanguage") === "English")
+    {
+        LanguageChange('english');
+    }
+    else if(readCookie("CurrentLanguage") === "Spanish")
+    {
+        LanguageChange('spanish');
+    }
+    //ShowImgPopup("img.jpeg");
+
+    
+</script>
+
+<script language="JavaScript" type="text/javascript" src="js/eat.js"></script>
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
+
+<script language="javascript" type="text/javascript">
+    window.history.forward();
+</script>
+
+<style type="text/css">
+    ul{list-style-type: none;}
+</style>
+
+</html>

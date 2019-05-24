@@ -1,0 +1,157 @@
+html{height: 1600px;}
+
+#container{height: 1180px !important;}
+#container #contents {position: relative; height: 1180px;}
+#container #contents .photo_btn {
+	position: absolute;
+    display: block;
+    float: left;
+    margin-left: 85px;
+    width: 919px;
+    padding-left: 143px;
+    background-color: #d8e7ee;
+}
+#container #contents .photo_btn  li {float: left;}
+#container #contents .photo_frame {position: absolute; float: left; margin-left: 73px; margin-top: 112px;}
+#container #contents .photo_frame dd {float:left; margin-right: 39px;}
+
+ul{list-style-type: none;}
+
+body {
+	margin: 0px !important;
+	padding: 0px;
+	overflow : hidden;
+}
+
+#wrapper {
+	/*background-image: url("../../Images/background.png");
+	background-repeat: no-repeat;
+	background-position-y: -180px;*/
+	height: 1270px;
+}
+#selfie-instructions{
+	position: absolute;
+	width: 1080px;
+	height: 325px;
+	background-image:url('../../images/selfie-instructions.png');
+}
+.home{
+	float: left;
+	height: 57px;
+	padding-right: 30px;
+
+}
+canvas  {
+	position: absolute;
+	margin-top: 0px;
+	margin-left: -914px;
+}
+.capture {
+	position: absolute;
+	margin-top: 0px;
+	margin-left: -914px;
+}
+
+.pannel {
+	margin-top: 50px;
+	
+	text-align: center;
+}
+.frame {position: absolute; z-index: 100; margin-top: -686px; margin-left: 85px;}
+.photo_start {position: absolute; margin-top: -686px; margin-left: 85px;}
+.email_state {position: absolute; z-index: 10; margin-top: -686px; margin-left: 85px;}
+/*
+.email {
+	position: absolute;
+	margin-top: 682px;
+	margin-left: -914px;
+}
+
+.print {
+	position: absolute;
+	margin-top: 45px;
+	margin-left: -627px;
+}
+
+.retake {
+	position: absolute;
+	margin-top: 682px;
+	margin-left: -459px;
+}
+
+.capture {
+	position: absolute;
+	margin-top: 0px;
+	margin-left: -914px;
+}
+
+.btn_pannel{
+	position: absolute;
+	margin-top: 0px;
+	margin-left: -914px;
+}
+*/
+.number_img {
+	position: absolute;
+	margin-top: -450px;
+	margin-left: 450px;
+}
+
+.keyboard {	
+	text-align: center;
+	background-image: url('../../Images/keyboard/keyboard_bg.png');
+	background-repeat: no-repeat;
+	width: 1080px;
+	margin-top: -453px;
+	position: absolute;
+    z-index: 101;
+}
+
+.top{
+	margin-right: 10px;
+	margin-top: 5px;
+	padding-top: 15px;
+	text-align: right;
+}
+
+.address {
+    position: absolute;
+	left: 110px;
+	margin-top: 25px;	
+}
+
+.wrap {
+	margin-top: 30px;
+}
+
+.line01 {
+	
+}
+
+.line02 {
+	position:absolute;
+	margin-left: 60px;
+}
+
+.line03 {
+	margin-right: 80px;
+	margin-top: -95px;
+}
+
+.line04 {
+	margin-right: 40px;
+}
+
+.line05 {
+	
+}
+
+.enter {
+	margin-left: 880px;
+	margin-top: 3px;
+}
+
+.footer{
+	padding-top: 30px;
+	text-align: center;
+}
