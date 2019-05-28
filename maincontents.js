@@ -48,7 +48,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
             location.href = "Contents/Slotmachine/index.html";
             break;
         case "Selfie":
-            PlaySpeech(speak[3]);
+            //PlaySpeech(speak[3]);
             location.href = "Contents/Selfie/index.html";
             break; 
         case "Avatar":
