@@ -89,12 +89,12 @@ header .logo img {
                     //alert(barcode);
                     barcode = barcode.split('').join('');
                     var array = barcode.split("Ü");
-                    var csi = array[0].toString().toLowerCase();
+                    var scancode = array[0].toString().toLowerCase();
                     var bnumber = array[1].toString().toLowerCase();
                     var fname = array[2].toString().toLowerCase();
                     var lname = array[3].toString().toLowerCase();
                     
-                    var dataString =  { 'CsiMarker' : csi, 'BadgeNumber' : bnumber, 'FirstName' :fname, 'LastName' : lname};
+                    var dataString =  { 'ScanCode' : scancode, 'BadgeNumber' : bnumber, 'FirstName' :fname, 'LastName' : lname};
                     $.ajax({
                       url:"https://robotaisolutions.com/BadgeScanning/crownBioApi.php",
                       type:"post",
@@ -103,7 +103,7 @@ header .logo img {
                         success: function(data) {
                           console.log(data);
                           if(data.response=='success'){
-                            Alert("Hi " + fname + " " + lname + ", welcome to the Crown Bio" + "csi" + "bnumber");
+                            //Alert("Hi " + fname + " " + lname + ", welcome to the Crown Bio" + scanCode +" "+ bnumber);
                             barcode = "";
                             array = null;
                             location.href = "menu.html";
