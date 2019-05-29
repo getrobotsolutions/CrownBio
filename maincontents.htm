@@ -81,13 +81,19 @@ header .logo img {
 <script>
         //ChangeLanguage('en-us');
         $(document).ready(function() {
-          
-            var barcode="";
-            $(document).keydown(function(e) {
+
+            flag = true;
+            if(flag !== false){
+
+            var barcode = "";
+            $(document).keydown(function (e) {
                 var code = (e.keyCode ? e.keyCode : e.which);
-                if(code === 13)// Enter key hit
-                {
-                    //alert(barcode);
+                console.log(code);
+                //if(code === 13)// Enter key hit
+                if (code === 16) {
+
+                    flag = false;
+                    alert(barcode);
                     //barcode = barcode.split('').join('');
                     //var array = barcode.split("Ü");
                     //var scancode = array[0].toString().toLowerCase();
@@ -96,32 +102,30 @@ header .logo img {
                     //var lname = array[3].toString().toLowerCase();
                     var array = barcode.split("|");
                     var scancode = array[0].toString().toLowerCase();
-                    
-                    var dataString =  { 'ScanCode' : scancode};
+
+                    var dataString = {'ScanCode': scancode};
                     $.ajax({
-                      url:"https://robotaisolutions.com/BadgeScanning/crownBioApi.php",
-                      type:"post",
-                      data : dataString,
-                      
-                        success: function(data) {
-                          console.log(data);
-                          if(data.response=='success'){
-                            //alert("Hi " + fname + " " + lname + ", welcome to the Crown Bio" + scanCode +" "+ bnumber);
-                            alert(scancode);
-                            barcode = "";
-                            array = null;
-                            location.href = "menu.html";
-                          }
-                         
+                        url: "https://robotaisolutions.com/BadgeScanning/crownBioApi.php",
+                        type: "post",
+                        data: dataString,
+
+                        success: function (data) {
+                            console.log(data);
+                            if (data.response == 'success') {
+                                //alert("Hi " + fname + " " + lname + ", welcome to the Crown Bio" + scanCode +" "+ bnumber);
+                                alert(scancode);
+                                barcode = "";
+                                array = null;
+                                location.href = "menu.html";
+                            }
+
                         }
                     });
-                    
-                    
-                    
+
+
                 }
-                else
-                {
-                    barcode=barcode+String.fromCharCode(code);
+                else {
+                    barcode = barcode + String.fromCharCode(code);
                 }
                 /*var csi = "test0";//array[0].toString().toLowerCase();
                     var bnumber = "test1";//array[1].toString().toLowerCase();
@@ -144,8 +148,9 @@ header .logo img {
                          
                         }
                     });*/
-                
+
             });
+        }
         });
     </script>
 </body>
