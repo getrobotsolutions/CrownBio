@@ -81,20 +81,23 @@ header .logo img {
 <script>
         //ChangeLanguage('en-us');
         $(document).ready(function() {
+          
             var barcode="";
             $(document).keydown(function(e) {
                 var code = (e.keyCode ? e.keyCode : e.which);
                 if(code === 13)// Enter key hit
                 {
                     //alert(barcode);
-                    barcode = barcode.split('').join('');
-                    var array = barcode.split("Ü");
+                    //barcode = barcode.split('').join('');
+                    //var array = barcode.split("Ü");
+                    //var scancode = array[0].toString().toLowerCase();
+                    //var bnumber = array[1].toString().toLowerCase();
+                    //var fname = array[2].toString().toLowerCase();
+                    //var lname = array[3].toString().toLowerCase();
+                    var array = barcode.split("|");
                     var scancode = array[0].toString().toLowerCase();
-                    var bnumber = array[1].toString().toLowerCase();
-                    var fname = array[2].toString().toLowerCase();
-                    var lname = array[3].toString().toLowerCase();
                     
-                    var dataString =  { 'ScanCode' : scancode, 'BadgeNumber' : bnumber, 'FirstName' :fname, 'LastName' : lname};
+                    var dataString =  { 'ScanCode' : scancode};
                     $.ajax({
                       url:"https://robotaisolutions.com/BadgeScanning/crownBioApi.php",
                       type:"post",
@@ -103,7 +106,8 @@ header .logo img {
                         success: function(data) {
                           console.log(data);
                           if(data.response=='success'){
-                            //Alert("Hi " + fname + " " + lname + ", welcome to the Crown Bio" + scanCode +" "+ bnumber);
+                            //alert("Hi " + fname + " " + lname + ", welcome to the Crown Bio" + scanCode +" "+ bnumber);
+                            alert(scancode);
                             barcode = "";
                             array = null;
                             location.href = "menu.html";
