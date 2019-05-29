@@ -109,3 +109,12 @@ function ShowPopupARS(src){
 
     document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+ src +'"/></div></div>';
 }
+window.addEventListener('message', function(event) { 
+
+    if(event.data="true"){
+      dance();
+    } 
+}); 
+function dance(){
+  alert("dancing");
+}
