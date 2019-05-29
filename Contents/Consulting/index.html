@@ -123,14 +123,9 @@
                 <button id="btn-start-recording" style="height: 80px !important; width: auto ; font-size: -webkit-xxx-large; border-radius: 50px; background-color: #ED9B2D; padding: 15px ">Click here to video tape a question</button>
                 <!--<button id="btn-pause-recording" style="display: none; font-size: 15px;">Pause</button>-->
 
-
-
-
                 <div style="display: none;">
                     <input type="checkbox" id="chk-fixSeeking" style="margin:0;width:auto;" title="Fix video seeking issues?">
                     <label for="chk-fixSeeking" style="font-size: 15px;margin:0;width: auto;cursor: pointer;-webkit-user-select:none;user-select:none;" title="Fix video seeking issues?">Fix Seeking Issues?</label>
-
-
                 </div>
 
                 <hr style=" display: none !important; border-top: 0;border-bottom: 1px solid rgb(189, 189, 189);margin: 4px -12px;margin-top: 8px;" >
@@ -173,7 +168,7 @@
             <div id="keyboard" class="keyboard" style="display: none">
                 <div class="top">
                     <font class="address" size="6px"><a id="address" onmousedown="return false"></a></font>
-                    <img src="Images/keyboard/send.png" id="save-from-keyboard" > &nbsp;
+                    <img src="Images/keyboard/save.png" id="save-from-keyboard" > &nbsp;
                     <img src="Images/keyboard/cancel.png" onclick="HideKeyboard()">
                 </div>
                 <div class="wrap" >
@@ -466,126 +461,9 @@
                     }
                 };
 
-                if(mediaContainerFormat === 'h264') {
-                    mimeType = 'video/webm\;codecs=h264';
-                    fileExtension = 'mp4';
-
-                    // video/mp4;codecs=avc1    
-                    if(isMimeTypeSupported('video/mpeg')) {
-                        mimeType = 'video/mpeg';
-                    }
-                }
-
                 if(mediaContainerFormat === 'mkv' && isMimeTypeSupported('video/x-matroska;codecs=avc1')) {
                     mimeType = 'video/x-matroska;codecs=avc1';
                     fileExtension = 'mkv';
-                }
-
-                if(mediaContainerFormat === 'vp8' && isMimeTypeSupported('video/webm\;codecs=vp8')) {
-                    mimeType = 'video/webm\;codecs=vp8';
-                    fileExtension = 'webm';
-                    recorderType = null;
-                    type = 'video';
-                }
-
-                if(mediaContainerFormat === 'vp9' && isMimeTypeSupported('video/webm\;codecs=vp9')) {
-                    mimeType = 'video/webm\;codecs=vp9';
-                    fileExtension = 'webm';
-                    recorderType = null;
-                    type = 'video';
-                }
-
-                if(mediaContainerFormat === 'pcm') {
-                    mimeType = 'audio/wav';
-                    fileExtension = 'wav';
-                    recorderType = StereoAudioRecorder;
-                    type = 'audio';
-                }
-
-                if(mediaContainerFormat === 'opus' || mediaContainerFormat.value === 'ogg') {
-                    if(isMimeTypeSupported('audio/webm')) {
-                        mimeType = 'audio/webm';
-                        fileExtension = 'webm'; // webm
-                    }
-
-                    if(isMimeTypeSupported('audio/ogg')) {
-                        mimeType = 'audio/ogg; codecs=opus';
-                        fileExtension = 'ogg'; // ogg
-                    }
-
-                    recorderType = null;
-                    type = 'audio';
-                }
-
-                if(mediaContainerFormat === 'whammy') {
-                    mimeType = 'video/webm';
-                    fileExtension = 'webm';
-                    recorderType = WhammyRecorder;
-                    type = 'video';
-                }
-
-                if(mediaContainerFormat === 'WebAssembly') {
-                    mimeType = 'video/webm';
-                    fileExtension = 'webm';
-                    recorderType = WebAssemblyRecorder;
-                    type = 'video';
-                }
-
-                if(mediaContainerFormat === 'gif') {
-                    mimeType = 'image/gif';
-                    fileExtension = 'gif';
-                    recorderType = GifRecorder;
-                    type = 'gif';
-                }
-
-                if(mediaContainerFormat === 'default') {
-                    mimeType = 'video/webm';
-                    fileExtension = 'webm';
-                    recorderType = null;
-                    type = 'video';
-                }
-
-                if(recordingMedia === 'record-audio') {
-                    captureAudio(commonConfig);
-
-                    button.mediaCapturedCallback = function() {
-                        var options = {
-                            type: type,
-                            mimeType: mimeType,
-                            leftChannel: params.leftChannel || false,
-                            disableLogs: params.disableLogs || false
-                        };
-
-                        if(params.sampleRate) {
-                            options.sampleRate = parseInt(params.sampleRate);
-                        }
-
-                        if(params.bufferSize) {
-                            options.bufferSize = parseInt(params.bufferSize);
-                        }
-
-                        if(recorderType) {
-                            options.recorderType = recorderType;
-                        }
-
-                        if(videoBitsPerSecond) {
-                            options.videoBitsPerSecond = videoBitsPerSecond;
-                        }
-
-                        if(DetectRTC.browser.name === 'Edge') {
-                            options.numberOfAudioChannels = 1;
-                        }
-
-                        options.ignoreMutedMedia = false;
-                        button.recordRTC = RecordRTC(button.stream, options);
-
-                        button.recordingEndedCallback = function(url) {
-                            setVideoURL(url);
-                        };
-
-                        button.recordRTC.startRecording();
-                        //btnPauseRecording.style.display = '';
-                    };
                 }
 
                 if(recordingMedia === 'record-audio-plus-video') {
@@ -702,85 +580,6 @@
                     };
                 }
 
-                if(recordingMedia === 'record-screen') {
-                    captureScreen(commonConfig);
-
-                    button.mediaCapturedCallback = function() {
-                        var options = {
-                            type: type,
-                            mimeType: mimeType,
-                            disableLogs: params.disableLogs || false,
-                            getNativeBlob: false, // enable it for longer recordings
-                            video: recordingPlayer
-                        };
-
-                        if(recorderType) {
-                            options.recorderType = recorderType;
-
-                            if(recorderType == WhammyRecorder || recorderType == GifRecorder || recorderType == WebAssemblyRecorder) {
-                                options.canvas = options.video = {
-                                    width: defaultWidth || 320,
-                                    height: defaultHeight || 240
-                                };
-                            }
-                        }
-
-                        if(videoBitsPerSecond) {
-                            options.videoBitsPerSecond = videoBitsPerSecond;
-                        }
-
-                        options.ignoreMutedMedia = false;
-                        button.recordRTC = RecordRTC(button.stream, options);
-
-                        button.recordingEndedCallback = function(url) {
-                            setVideoURL(url);
-                        };
-
-                        button.recordRTC.startRecording();
-                        //btnPauseRecording.style.display = '';
-                    };
-                }
-
-                // note: audio+tab is supported in Chrome 50+
-                // todo: add audio+tab recording
-                if(recordingMedia === 'record-audio-plus-screen') {
-                    captureAudioPlusScreen(commonConfig);
-
-                    button.mediaCapturedCallback = function() {
-                        var options = {
-                            type: type,
-                            mimeType: mimeType,
-                            disableLogs: params.disableLogs || false,
-                            getNativeBlob: false, // enable it for longer recordings
-                            video: recordingPlayer
-                        };
-
-                        if(recorderType) {
-                            options.recorderType = recorderType;
-
-                            if(recorderType == WhammyRecorder || recorderType == GifRecorder || recorderType == WebAssemblyRecorder) {
-                                options.canvas = options.video = {
-                                    width: defaultWidth || 320,
-                                    height: defaultHeight || 240
-                                };
-                            }
-                        }
-
-                        if(videoBitsPerSecond) {
-                            options.videoBitsPerSecond = videoBitsPerSecond;
-                        }
-
-                        options.ignoreMutedMedia = false;
-                        button.recordRTC = RecordRTC(button.stream, options);
-
-                        button.recordingEndedCallback = function(url) {
-                            setVideoURL(url);
-                        };
-
-                        button.recordRTC.startRecording();
-                        //btnPauseRecording.style.display = '';
-                    };
-                }
             };
 
             function captureVideo(config) {
@@ -1625,9 +1424,6 @@
         </script>
 
 
-
-
-
         <script>
             var chkFixSeeking = document.querySelector('#chk-fixSeeking');
             chkFixSeeking.onchange = function() {
@@ -1667,57 +1463,8 @@
                 }
             }, false);
         </script>
-
-        <script>
-            /*
-            var btnPauseRecording = document.querySelector('#btn-pause-recording');
-            btnPauseRecording.onclick = function() {
-                if(!btnStartRecording.recordRTC) {
-                    btnPauseRecording.style.display = 'none';
-                    return;
-                }
-
-                btnPauseRecording.disabled = true;
-                if(btnPauseRecording.innerHTML === 'Pause') {
-                    btnStartRecording.disabled = true;
-                    chkFixSeeking.parentNode.style.display = 'none';
-                    btnStartRecording.style.fontSize = '15px';
-                    btnStartRecording.recordRTC.pauseRecording();
-                    recordingPlayer.parentNode.parentNode.querySelector('h2').innerHTML = 'Recording status: paused';
-                    recordingPlayer.pause();
-
-                    btnPauseRecording.style.fontSize = 'inherit';
-                    setTimeout(function() {
-                        btnPauseRecording.innerHTML = 'Resume Recording';
-                        btnPauseRecording.disabled = false;
-                    }, 2000);
-                }
-
-                if(btnPauseRecording.innerHTML === 'Resume Recording') {
-                    btnStartRecording.disabled = false;
-                    chkFixSeeking.parentNode.style.display = 'none';
-                    btnStartRecording.style.fontSize = 'inherit';
-                    btnStartRecording.recordRTC.resumeRecording();
-                    recordingPlayer.parentNode.parentNode.querySelector('h2').innerHTML = '<img src="https://www.webrtc-experiment.com/images/progress.gif">';
-                    recordingPlayer.play();
-
-                    btnPauseRecording.style.fontSize = '15px';
-                    btnPauseRecording.innerHTML = 'Pause';
-                    setTimeout(function() {
-                        btnPauseRecording.disabled = false;
-                    }, 2000);
-                }
-            };*/
-        </script>
-
-
     </article>
 
-
-    <!-- commits.js is useless for you! -->
-
-    <script src="https://www.webrtc-experiment.com/commits.js" async></script>
-    <script src="https://apis.google.com/js/client:plusone.js"></script>
 <script src="Script.js"></script>
 </body>
 
