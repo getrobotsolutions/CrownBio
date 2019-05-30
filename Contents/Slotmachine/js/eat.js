@@ -109,12 +109,14 @@ function ShowPopupARS(src){
 
     document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+ src +'"/></div></div>';
 }
-window.addEventListener('message', function(event) { 
-
+window.addEventListener('message', function(event) {
     if(event.data="true"){
       dance();
     } 
 }); 
 function dance(){
-  alert("dancing");
+  $('#player').get(0).play();
+    setTimeout(function () {
+        $('#player').get(0).load();
+    },10000);
 }
