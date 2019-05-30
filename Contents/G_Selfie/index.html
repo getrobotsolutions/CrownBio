@@ -1,0 +1,66 @@
+<!--
+> App Name      :   Take a Selfie
+> Developed By  :   Pritesh Bhavsar
+> Version       :   V 1.0.0
+> License       :   GPL
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html" charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="../Common/Styles/Css/Layout.css">
+    <link rel="stylesheet" type="text/css" href="../Common/Styles/Css/Font.css">
+    <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Style.css">
+
+    <!-- Scripts are defined at the end-->
+</head>
+
+<body onload="JSMain()" onbeforeunload="JSUnload()" ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;" class="noselect unselectable">
+
+    <header>
+        <div class="logo">
+            <img src="../../assets/logo.png" onclick="FC_ContentsCall('Menu')">
+        </div>
+    </header>
+
+    <nav>
+        <img src="../../assets/icons/home.png" class="img-home" onclick="FC_ContentsCall('Menu')">
+    </nav>
+
+    <div id="wrapper">
+        <video id="video" width="910" height="682" autoplay></video>
+        <canvas id="canvas" width="910" height="682" ></canvas>
+        <div id="frame">
+            <img id="counter" src="">
+        </div>
+        <div id="photo_button"></div>
+    </div>
+
+    <div class="controls">
+        <img id="btn_send_email" src="assets/btn_nor_email_en-us.png">
+        <img id="btn_retake" src="assets/btn_nor_retake_en-us.png">
+    </div>
+
+    <div class="frame_shelf">
+        <h2>Select a Frame:</h2>
+        <img id="btn_frame01"  src="Frames/frame01.png" onclick="setFrame('frame01')">
+        <img id="btn_frame02" src="Frames/frame02.png" onclick="setFrame('frame02')">
+    </div>
+
+
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../Common/Scripts/jquery-3.1.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../maincontents.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Script.js"></script>
+
+</body>
+
+</html>
