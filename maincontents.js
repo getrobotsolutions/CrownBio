@@ -11,12 +11,12 @@
         jokes[9]="Want to know my favorite dance? It’s the robot";
 
         var speak = new Array( );
-        speak[0] = "Check out my new website";
-        speak[1] = "Watch my videos to see Blaze manufacturing in action";
-        speak[2] = "Look through my photos to see our products";
+        speak[0] = "";
+        speak[1] = "Click on the video to see more.";
+        speak[2] = "Record a video message and CrownBio will get back to you.";
         speak[3] = "Take-A-Picture with me";
-        speak[4] = "Get ready to become a robot";
-        speak[5] = "Pick a song and let’s boogie!";
+        speak[4] = "";
+        speak[5] = "Spin my wheel to make me dance!";
 
 //window.external.ChangeLanguage("en-us");
 function FC_ContentsCall(strContentsName, strLanguage)
@@ -36,28 +36,20 @@ function FC_ContentsCall(strContentsName, strLanguage)
            location.href = "../../menu.html"; 
             break;
         case "Consulting":
-            //PlaySpeech(speak[0]);
+            PlaySpeech(speak[2);
             location.href = "Contents/Consulting/index.html";
             break;
         case "Videos":
-            //PlaySpeech(speak[1]);
+            PlaySpeech(speak[1]);
             location.href = "Contents/Videos/index.html";
             break;
         case "Slotmachine":
-            //PlaySpeech(speak[2]);
+            PlaySpeech(speak[5]);
             location.href = "Contents/Slotmachine/index.html";
             break;
         case "Selfie":
-            //PlaySpeech(speak[3]);
+            PlaySpeech(speak[3]);
             location.href = "Contents/Selfie/index.html";
-            break; 
-        case "Avatar":
-            PlaySpeech(speak[4]);
-            location.href = "Contents/RobotAvatar/index.htm";
-            break;
-        case "Dance":
-            PlaySpeech(speak[5]);
-            location.href = "Contents/Dance/index.html";
             break;
         case "Config":
             if(conf_count === 5)
@@ -131,25 +123,25 @@ function OnJoystickControlled(strPara){
     if(btn_info[0] == '1'){
            // window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Welcome to Accenture Innovation Day");//I'm here to assist you, press any button on my screen to begin");
+            window.external.PlaySpeech("Please scan your badge to begin.");//I'm here to assist you, press any button on my screen to begin");
           
     }
 
     if(btn_info[1] == '1'){
         //window.external.ChangeLanguage("en-us");
         SetVolume(1);
-        window.external.PlaySpeech("Let's Innovate together");
+        window.external.PlaySpeech("Come take a picture with me.");
         
     }
     if(btn_info[2] == '1'){
         //window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Thank you for visiting our Innovation Event ");
+            window.external.PlaySpeech("Check out my app to learn more about Crownbio.");
     }
     if(btn_info[3] == '1'){
         //window.external.ChangeLanguage("en-us");
         SetVolume(1);
-       window.external.PlaySpeech("Our innovation led approach will help you develop and deliver disruptive innovations, and to scale them faster.");
+       window.external.PlaySpeech("Ask me a question?");
         
     }
     if(btn_info[4] == '1'){
