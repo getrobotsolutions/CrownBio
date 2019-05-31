@@ -28,7 +28,8 @@ document.getElementById("photo_button").addEventListener("click", function() {
 document.getElementById("btn_send_email").addEventListener("click", function() {
     if(isPhoto === true)
     {
-        sendEmail(convertCanvasToImage(canvas));
+        ShowKeyboard();
+        //sendEmail(convertCanvasToImage(canvas));
 
     }
 });
@@ -95,12 +96,12 @@ function countDown()
 
 
 
-function sendEmail(img_data) {
+function sendEmail() {
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "manage.ars1@gmail.com",
         Password : "3a7e231a-a9d5-4b32-b746-ea0be2c3de29",
-        To : 'bpritesh1@gmail.com',
+        To : getMessage(),
         From : "manage.ars1@gmail.com",
         Subject : "This is the subject",
         Body : "Hi for the email to go along with the picture can we put this: Thank you for visiting CrownBio at ASCO. Please find attached your picture, you can share with others using #CrownBioBot\n" +
@@ -110,7 +111,7 @@ function sendEmail(img_data) {
             {
                 name : "Take-a-Selfie.png",
                 //path : "https://networkprogramming.files.wordpress.com/2017/11/smtpjs.png"
-                data :  img_data
+                data :  convertCanvasToImage(canvas)
             }]
     }).then(
         message => alert(message)
@@ -118,3 +119,38 @@ function sendEmail(img_data) {
 }
 
 
+function ShowKeyboard()
+{
+    document.getElementById("keyboard").style.display = "block";
+    document.getElementById("address").innerHTML = "Please Enter your Email Address";
+}
+
+
+function HideKeyboard()
+{
+    document.getElementById("keyboard").style.display = "none";
+
+    message = "";
+    document.getElementById("address").innerHTML = message;
+}
+
+
+var message = "";
+function keyboard(strPara)
+{
+    if (strPara == "bs")
+    {
+        message = message.slice(0, -1);
+    }
+
+    else
+    {
+        message += strPara;
+    }
+
+    document.getElementById("address").innerHTML = message;
+}
+
+function getMessage() {
+    return message;
+}
