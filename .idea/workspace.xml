@@ -2,60 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be2d0859-ca7f-49ff-a20a-1431d8c08e9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/-.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/..png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/@.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/cancel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/com.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/enter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/exclamation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/g.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/gmail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/h.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/i.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/j.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/k.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/keyboard_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/l.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/m.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/mail_blank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/n.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/o.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/q.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/question.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/r.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/s.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/save.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/send.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/spacebar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/t.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/u.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/v.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/w.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/y.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/assets/email_fail_en-us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/assets/email_sending_en-us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/assets/email_success_en-us.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Consulting/Images/keyboard/..png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Consulting/Images/keyboard/dot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/Consulting/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/Consulting/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/..png" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/dot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Contents/G_Selfie/Script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/G_Selfie/Script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contents/G_Selfie/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/G_Selfie/Style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Contents/G_Selfie/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/G_Selfie/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,7 +36,7 @@
           <entry key="htm" value="3" />
           <entry key="html" value="13" />
           <entry key="js" value="10" />
-          <entry key="png" value="11" />
+          <entry key="png" value="13" />
           <entry key="psd" value="1" />
         </counts>
       </usages-collector>
@@ -90,7 +44,7 @@
         <counts>
           <entry key="CSS" value="8" />
           <entry key="HTML" value="16" />
-          <entry key="Image" value="12" />
+          <entry key="Image" value="14" />
           <entry key="JavaScript" value="10" />
         </counts>
       </usages-collector>
@@ -98,15 +52,15 @@
         <counts>
           <entry key="css" value="487" />
           <entry key="htm" value="133" />
-          <entry key="html" value="1509" />
-          <entry key="js" value="993" />
+          <entry key="html" value="1512" />
+          <entry key="js" value="1048" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="487" />
-          <entry key="HTML" value="1642" />
-          <entry key="JavaScript" value="993" />
+          <entry key="HTML" value="1645" />
+          <entry key="JavaScript" value="1048" />
         </counts>
       </usages-collector>
     </session>
@@ -116,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Contents/Consulting/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7081">
-              <caret line="200" lean-forward="true" selection-start-line="200" selection-end-line="200" />
+            <state relative-caret-position="328">
+              <caret line="209" column="17" lean-forward="true" selection-start-line="209" selection-start-column="17" selection-end-line="209" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -152,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Contents/G_Selfie/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="45" column="10" lean-forward="true" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+            <state relative-caret-position="393">
+              <caret line="107" column="73" lean-forward="true" selection-start-line="107" selection-start-column="73" selection-end-line="107" selection-end-column="73" />
               <folding>
                 <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -173,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Contents/G_Selfie/Style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="873">
-              <caret line="109" column="1" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
+            <state relative-caret-position="251">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -182,8 +136,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Contents/G_Selfie/Script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+            <state relative-caret-position="459">
+              <caret line="106" column="68" selection-start-line="106" selection-start-column="68" selection-end-line="106" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -227,9 +181,9 @@
         <option value="$PROJECT_DIR$/Scripts/BaseCommand.js" />
         <option value="$PROJECT_DIR$/maincontents.htm" />
         <option value="$PROJECT_DIR$/maincontents.js" />
-        <option value="$PROJECT_DIR$/Contents/G_Selfie/Script.js" />
         <option value="$PROJECT_DIR$/Contents/G_Selfie/Style.css" />
         <option value="$PROJECT_DIR$/Contents/G_Selfie/index.html" />
+        <option value="$PROJECT_DIR$/Contents/G_Selfie/Script.js" />
       </list>
     </option>
   </component>
@@ -273,26 +227,40 @@
               <item name="CrownBio" type="b2602c69:ProjectViewProjectNode" />
               <item name="CrownBio" type="462c0819:PsiDirectoryNode" />
               <item name="Contents" type="462c0819:PsiDirectoryNode" />
-              <item name="Consulting" type="462c0819:PsiDirectoryNode" />
+              <item name="G_Selfie" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CrownBio" type="b2602c69:ProjectViewProjectNode" />
               <item name="CrownBio" type="462c0819:PsiDirectoryNode" />
               <item name="Contents" type="462c0819:PsiDirectoryNode" />
-              <item name="Consulting" type="462c0819:PsiDirectoryNode" />
+              <item name="G_Selfie" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CrownBio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CrownBio" type="462c0819:PsiDirectoryNode" />
+              <item name="Contents" type="462c0819:PsiDirectoryNode" />
+              <item name="G_Selfie" type="462c0819:PsiDirectoryNode" />
               <item name="Images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CrownBio" type="b2602c69:ProjectViewProjectNode" />
               <item name="CrownBio" type="462c0819:PsiDirectoryNode" />
               <item name="Contents" type="462c0819:PsiDirectoryNode" />
-              <item name="G_Selfie" type="462c0819:PsiDirectoryNode" />
+              <item name="Selfie" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CrownBio" type="b2602c69:ProjectViewProjectNode" />
               <item name="CrownBio" type="462c0819:PsiDirectoryNode" />
               <item name="Contents" type="462c0819:PsiDirectoryNode" />
-              <item name="G_Selfie" type="462c0819:PsiDirectoryNode" />
+              <item name="Selfie" type="462c0819:PsiDirectoryNode" />
+              <item name="Image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CrownBio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CrownBio" type="462c0819:PsiDirectoryNode" />
+              <item name="Contents" type="462c0819:PsiDirectoryNode" />
+              <item name="Selfie" type="462c0819:PsiDirectoryNode" />
               <item name="Images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -316,9 +284,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Contents/G_Selfie/assets" />
       <recent name="$PROJECT_DIR$/Contents/G_Selfie" />
       <recent name="$PROJECT_DIR$/Contents/G_Selfie/Frames" />
-      <recent name="$PROJECT_DIR$/Contents/G_Selfie/assets" />
       <recent name="$PROJECT_DIR$/Contents/Consulting" />
     </key>
   </component>
@@ -352,7 +320,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33640000" />
+    <option name="totallyTimeSpent" value="34473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -553,10 +521,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Contents/Consulting/kStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="52" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contents/G_Selfie/Images/keyboard/dot.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contents/G_Selfie/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="107" column="73" lean-forward="true" selection-start-line="107" selection-start-column="73" selection-end-line="107" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Contents/Consulting/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7081">
-          <caret line="200" lean-forward="true" selection-start-line="200" selection-end-line="200" />
+        <state relative-caret-position="328">
+          <caret line="209" column="17" lean-forward="true" selection-start-line="209" selection-start-column="17" selection-end-line="209" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -569,34 +557,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Contents/Consulting/kStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="52" selection-end-column="1" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Contents/Selfie/Images/email_success_en-us.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Contents/G_Selfie/Style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="873">
-          <caret line="109" column="1" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contents/G_Selfie/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="45" column="10" lean-forward="true" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="251">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Contents/G_Selfie/Script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        <state relative-caret-position="459">
+          <caret line="106" column="68" selection-start-line="106" selection-start-column="68" selection-end-line="106" selection-end-column="68" />
         </state>
       </provider>
     </entry>

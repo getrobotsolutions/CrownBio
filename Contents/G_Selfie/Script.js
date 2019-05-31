@@ -114,8 +114,19 @@ function sendEmail() {
                 data :  convertCanvasToImage(canvas)
             }]
     }).then(
-        message => alert(message)
-    );
+        //message => alert(message)
+        console.log(message)
+/*
+    if(message === "ok")
+
+    {
+        document.getElementById("photo_button").style.background = "url(\"assets/email_success_en-us.png.png\")";
+    }
+    else
+    {
+        document.getElementById("photo_button").style.background = "url(\"assets/email_fail_en-us.png.png\")";
+    }*/
+        );
 }
 
 
