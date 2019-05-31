@@ -36,13 +36,14 @@ document.getElementById("btn_send_email").addEventListener("click", function() {
 
 document.getElementById("btn_retake").addEventListener("click", function() {
     if(isPhoto === true)
-    {
+    {/*
         video.style.display = "block";
         video.style.marginLeft = "85px";
         canvas.style.display = "none";
         document.getElementById("photo_button").style.display = "block";
         document.getElementById("counter").style.display = "block";
-
+*/
+        location.reload();
     }
 });
 
@@ -121,7 +122,7 @@ function sendEmail() {
 function verify_email(msg) {
     HideKeyboard();
     document.getElementById("photo_button").style.display = "block";
-    if(message === "ok")
+    if(message === "OK")
     {
         document.getElementById("photo_button").style.background = "url(\"assets/email_success_en-us.png\")";
     }
