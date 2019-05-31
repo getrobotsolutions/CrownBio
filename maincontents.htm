@@ -79,6 +79,7 @@ header .logo img {
 }
   </style>
 <script>
+
         //ChangeLanguage('en-us');
         $(document).ready(function() {
 
@@ -93,7 +94,7 @@ header .logo img {
                 if (code === 16) {
 
                     flag = false;
-                    alert(barcode);
+                    //alert(barcode);
                     //barcode = barcode.split('').join('');
                     //var array = barcode.split("Ü");
                     //var scancode = array[0].toString().toLowerCase();
@@ -111,7 +112,7 @@ header .logo img {
 
                         success: function (data) {
                             console.log(data);
-                            if (data.response == 'success') {
+                            if (data.response === 'success') {
                                 //alert("Hi " + fname + " " + lname + ", welcome to the Crown Bio" + scanCode +" "+ bnumber);
                                 alert(scancode);
                                 barcode = "";

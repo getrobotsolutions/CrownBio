@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be2d0859-ca7f-49ff-a20a-1431d8c08e9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Frames/frame01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Frames/frame02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/Style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/assets/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/assets/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/assets/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/assets/btn_nor_email_en-us.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/assets/btn_nor_retake_en-us.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/assets/start_btn_press_en-us.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Contents/G_Selfie/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maincontents.htm" beforeDir="false" afterPath="$PROJECT_DIR$/maincontents.htm" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +27,8 @@
         <counts>
           <entry key="css" value="6" />
           <entry key="htm" value="3" />
-          <entry key="html" value="9" />
-          <entry key="js" value="5" />
+          <entry key="html" value="10" />
+          <entry key="js" value="6" />
           <entry key="png" value="11" />
           <entry key="psd" value="1" />
         </counts>
@@ -46,15 +36,15 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="6" />
-          <entry key="HTML" value="12" />
+          <entry key="HTML" value="13" />
           <entry key="Image" value="12" />
-          <entry key="JavaScript" value="5" />
+          <entry key="JavaScript" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="487" />
-          <entry key="htm" value="100" />
+          <entry key="htm" value="111" />
           <entry key="html" value="1498" />
           <entry key="js" value="687" />
         </counts>
@@ -62,7 +52,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="487" />
-          <entry key="HTML" value="1598" />
+          <entry key="HTML" value="1609" />
           <entry key="JavaScript" value="687" />
         </counts>
       </usages-collector>
@@ -70,35 +60,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Contents/Selfie/Scripts/PhotoPrinting.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/maincontents.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="119" column="12" lean-forward="true" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Contents/Selfie/Styles/Css/PhotoPrinting.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Contents/Selfie/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="77" column="35" lean-forward="true" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
-              <folding>
-                <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="-162">
+              <caret line="89" column="46" lean-forward="true" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -106,7 +72,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Contents/G_Selfie/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="678">
+            <state relative-caret-position="648">
               <caret line="50" column="85" lean-forward="true" selection-start-line="50" selection-start-column="85" selection-end-line="50" selection-end-column="85" />
             </state>
           </provider>
@@ -117,24 +83,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/maincontents.htm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="74" column="2" selection-start-line="74" selection-start-column="2" selection-end-line="74" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Contents/G_Selfie/Style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -171,7 +119,6 @@
         <option value="$PROJECT_DIR$/Contents/Consulting/kStyle.css" />
         <option value="$PROJECT_DIR$/Contents/Consulting/Script.js" />
         <option value="$PROJECT_DIR$/Contents/Consulting/index.html" />
-        <option value="$PROJECT_DIR$/maincontents.htm" />
         <option value="$PROJECT_DIR$/Contents/Slotmachine/index.html" />
         <option value="$PROJECT_DIR$/Contents/Slotmachine/js/eat.js" />
         <option value="$PROJECT_DIR$/Contents/Selfie/index.html" />
@@ -179,6 +126,7 @@
         <option value="$PROJECT_DIR$/Contents/G_Selfie/index.html" />
         <option value="$PROJECT_DIR$/Contents/G_Selfie/Script.js" />
         <option value="$PROJECT_DIR$/Contents/G_Selfie/Style.css" />
+        <option value="$PROJECT_DIR$/maincontents.htm" />
       </list>
     </option>
   </component>
@@ -188,7 +136,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -227,6 +175,11 @@
               <item name="CrownBio" type="b2602c69:ProjectViewProjectNode" />
               <item name="CrownBio" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CrownBio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CrownBio" type="462c0819:PsiDirectoryNode" />
+              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -279,10 +232,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25766000" />
+    <option name="totallyTimeSpent" value="27766000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2593184" />
@@ -454,17 +407,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Contents/G_Selfie/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="50" column="85" lean-forward="true" selection-start-line="50" selection-start-column="85" selection-end-line="50" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Contents/G_Selfie/Style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contents/G_Selfie/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="50" column="85" lean-forward="true" selection-start-line="50" selection-start-column="85" selection-end-line="50" selection-end-column="85" />
         </state>
       </provider>
     </entry>
@@ -477,8 +430,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/maincontents.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="74" column="2" selection-start-line="74" selection-start-column="2" selection-end-line="74" selection-end-column="2" />
+        <state relative-caret-position="-162">
+          <caret line="89" column="46" lean-forward="true" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
         </state>
       </provider>
     </entry>
