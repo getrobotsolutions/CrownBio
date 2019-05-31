@@ -95,7 +95,7 @@ function countDown()
 
 
 
-
+var email_status;
 function sendEmail() {
     Email.send({
         Host : "smtp.elasticemail.com",
@@ -114,10 +114,10 @@ function sendEmail() {
                 data :  convertCanvasToImage(canvas)
             }]
     }).then(
-        //message => alert(message)
-        console.log(message)
+        email_status => alert(email_status),
+        console.log(email_status)
 /*
-    if(message === "ok")
+        if(message === "ok")
 
     {
         document.getElementById("photo_button").style.background = "url(\"assets/email_success_en-us.png.png\")";
