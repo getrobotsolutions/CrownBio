@@ -91,7 +91,7 @@ header .logo img {
                 var code = (e.keyCode ? e.keyCode : e.which);
                 console.log(code);
                 //if(code === 13)// Enter key hit
-                if (code === 16) {
+                if (code === 16 || String.fromCharCode(code) === 'ü') {
 
                     flag = false;
                     //alert(barcode);
