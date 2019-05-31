@@ -114,19 +114,20 @@ function sendEmail() {
                 data :  convertCanvasToImage(canvas)
             }]
     }).then(
-        email_status => alert(email_status),
-        console.log(email_status)
-/*
-        if(message === "ok")
+        email_status => verify_email(email_status)
+        );
+}
 
+function verify_email(msg) {
+    HideKeyboard();
+    if(message === "ok")
     {
         document.getElementById("photo_button").style.background = "url(\"assets/email_success_en-us.png.png\")";
     }
     else
     {
         document.getElementById("photo_button").style.background = "url(\"assets/email_fail_en-us.png.png\")";
-    }*/
-        );
+    }
 }
 
 
