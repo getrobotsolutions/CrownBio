@@ -122,11 +122,11 @@ function verify_email(msg) {
     HideKeyboard();
     if(message === "ok")
     {
-        document.getElementById("photo_button").style.background = "url(\"assets/email_success_en-us.png.png\")";
+        document.getElementById("photo_button").style.background = "url(\"assets/email_success_en-us.png\")";
     }
     else
     {
-        document.getElementById("photo_button").style.background = "url(\"assets/email_fail_en-us.png.png\")";
+        document.getElementById("photo_button").style.background = "url(\"assets/email_fail_en-us.png\")";
     }
 }
 
