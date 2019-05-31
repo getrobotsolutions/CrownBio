@@ -122,7 +122,8 @@ function sendEmail() {
 function verify_email(msg) {
     HideKeyboard();
     document.getElementById("photo_button").style.display = "block";
-    if(message === "OK")
+    console.log(msg);
+    if(msg === "OK")
     {
         document.getElementById("photo_button").style.background = "url(\"assets/email_success_en-us.png\")";
     }
