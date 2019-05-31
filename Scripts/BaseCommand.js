@@ -92,9 +92,20 @@ function SetRobotFace()
 	window.external.SetRobotFace();
 }
 
+function PlaySpeech2(speechString)
+{
+    window.external.PlaySpeech(speechString);
+}
 function PlaySpeech(speechString)
 {
-	window.external.PlaySpeech(speechString);
+    dataKey = speechString;
+    console.log("sending Key:" + speechString);
+
+    $.ajax({
+        type: "GET",
+        data: { key: dataKey},
+        url: "/api/sendresponse"
+    });
 }
 
 function StopSpeech()
