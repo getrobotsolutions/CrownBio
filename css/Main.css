@@ -200,3 +200,6 @@ position: absolute;
     top: 0;
     z-index: 1000;
 }
+.survey-form p{
+	font-size: 30px;
+}
