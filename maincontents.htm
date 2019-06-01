@@ -15,6 +15,67 @@
     <link rel="stylesheet" href="boots/css/bootstrap.min.css">
     
     <link href="css/Main.css" rel="stylesheet" type="text/css"/>
+
+    <style>
+        .keyboard {
+            text-align: center;
+            background-image: url('images/keyboard/keyboard_bg.png');
+            background-repeat: no-repeat;
+            width: 1080px;
+            margin-top: -1453px;
+            position: absolute;
+            z-index: 101;
+        }
+
+        .top{
+            margin-right: 10px;
+            margin-top: 5px;
+            padding-top: 15px;
+            text-align: right;
+        }
+
+        .address {
+            position: absolute;
+            left: 110px;
+            margin-top: 25px;
+        }
+
+        .address a {
+            color: #0a4266 !important;
+        }
+
+        .wrap {
+            margin-top: 30px;
+        }
+
+        .line01 {
+
+        }
+
+        .line02 {
+            position:absolute;
+            margin-left: 60px;
+        }
+
+        .line03 {
+            margin-right: 80px;
+            margin-top: -95px;
+        }
+
+        .line04 {
+            margin-right: 40px;
+        }
+
+        .line05 {
+
+        }
+
+        .enter {
+            margin-left: 880px;
+            margin-top: 3px;
+        }
+
+    </style>
 </head>
 
 
@@ -26,13 +87,13 @@
     </div>
     <!--<div class="img-home" onclick="location.href ='maincontents.htm'"></div>-->
     <div class="logo">
-      <img src="assets/logo-white.png" onclick="location.href='menu.html'" width="">
+      <img src="assets/logo-white.png" onclick="ShowKeyboard()" width="">
     </div>
 
   </header>
 
   <section class="main-content">
-    <h1 class="welcome-text">SCAN YOUR</br>BADGE TO BEGIN</h1>
+    <h1 class="welcome-text">TAP ON THE SCREEN</br>TO BEGIN</h1>
     <img src="assets/icons/qr-code-1.png" style="position: relative;top: 460px;left: 670px;width: 355px;">
 
     
@@ -51,12 +112,12 @@
               <div class="personal-info">
                 <p>Are you currently running preclinical studies?</p>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" id="q1" value="Yes">
-                    <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="q1" id="q1" value="Yes" style="transform: scale(2); margin-left: 20px; width: 30px; height: 30px;">
+                    <label for="Yes" class="form-check-label" style="font-size: x-large;">
                     Yes
                     </label>
-                    <input class="form-check-input" type="radio" name="q1" id="q1" value="No">
-                    <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="q1" id="q1" value="No" style="margin-left: 50px !important; transform: scale(2);  width: 30px; height: 30px;">
+                    <label for="No" class="form-check-label" style="font-size: x-large;  margin-top: 30px;">
                     No
                     </label>
                   </div>
@@ -66,22 +127,103 @@
               <div class="personal-info">
                 <p>Have you ever run a mouse clinical trial before? (Yes) or (No)</p>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" id="q2" value="Yes">
-                    <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="q2" id="q2" value="Yes" style="transform: scale(2); margin-left: 20px; width: 30px; height: 30px;">
+                    <label class="form-check-label" style="font-size: x-large;">
                     Yes
                     </label>
-                    <input class="form-check-input" type="radio" name="q2" id="q2" value="No">
-                    <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="q2" id="q2" value="No" style="margin-left: 50px !important; transform: scale(2);  width: 30px; height: 30px;">
+                    <label class="form-check-label" style="font-size: x-large;  margin-top: 30px;">
                     No
                     </label>
+
                   </div>
                 </div>
               </div>
-            <button type="" id="form-submit" class="btn1" required="" value="SUBMIT" name="">SUBMIT</button>
+            <button type="" id="form-submit" class="btn1" required="" value="SUBMIT" name="" style="    font-size: x-large;
+    margin-left: 350px;
+    width: 150px;
+    height: 60px;
+    background-color: #ED9B2D;
+    border-radius: 20px;
+    color: white;">SUBMIT</button>
           </form>
         </div>
       </div>
     </div>
+
+  <div id="keyboard" class="keyboard" style="display: none">
+      <div class="top">
+          <font class="address" size="6px"><a id="address" onmousedown="return false"></a></font>
+          <img src="images/keyboard/save.png" id="save-from-keyboard" onclick="ShowPopupForm()"> &nbsp;
+          <img src="images/keyboard/cancel.png" onclick="HideKeyboard()">
+      </div>
+      <div class="wrap" >
+          <div class="line01">
+              <img src="images/keyboard/1.png" onclick="keyboard('1')">
+              <img src="images/keyboard/2.png" onclick="keyboard('2')">
+              <img src="images/keyboard/3.png" onclick="keyboard('3')">
+              <img src="images/keyboard/4.png" onclick="keyboard('4')">
+              <img src="images/keyboard/5.png" onclick="keyboard('5')">
+              <img src="images/keyboard/6.png" onclick="keyboard('6')">
+              <img src="images/keyboard/7.png" onclick="keyboard('7')">
+              <img src="images/keyboard/8.png" onclick="keyboard('8')">
+              <img src="images/keyboard/9.png" onclick="keyboard('9')">
+              <img src="images/keyboard/0.png" onclick="keyboard('0')">
+              <img src="images/keyboard/delete.png" onclick="keyboard('bs')">
+          </div>
+
+          <div class="line02">
+              <img src="images/keyboard/q.png" onclick="keyboard('q')">
+              <img src="images/keyboard/w.png" onclick="keyboard('w')">
+              <img src="images/keyboard/e.png" onclick="keyboard('e')">
+              <img src="images/keyboard/r.png" onclick="keyboard('r')">
+              <img src="images/keyboard/t.png" onclick="keyboard('t')">
+              <img src="images/keyboard/y.png" onclick="keyboard('y')">
+              <img src="images/keyboard/u.png" onclick="keyboard('u')">
+              <img src="images/keyboard/i.png" onclick="keyboard('i')">
+              <img src="images/keyboard/o.png" onclick="keyboard('o')">
+              <img src="images/keyboard/p.png" onclick="keyboard('p')">
+          </div>
+
+          <div class="enter" >
+              <img src="images/keyboard/enter.png" onclick="send('1')">
+          </div>
+
+          <div class="line03">
+              <img src="images/keyboard/a.png" onclick="keyboard('a')">
+              <img src="images/keyboard/s.png" onclick="keyboard('s')">
+              <img src="images/keyboard/d.png" onclick="keyboard('d')">
+              <img src="images/keyboard/f.png" onclick="keyboard('f')">
+              <img src="images/keyboard/g.png" onclick="keyboard('g')">
+              <img src="images/keyboard/h.png" onclick="keyboard('h')">
+              <img src="images/keyboard/j.png" onclick="keyboard('j')">
+              <img src="images/keyboard/k.png" onclick="keyboard('k')">
+              <img src="images/keyboard/l.png" onclick="keyboard('l')">
+          </div>
+
+          <div class="line04">
+              <img src="images/keyboard/z.png" onclick="keyboard('z')">
+              <img src="images/keyboard/x.png" onclick="keyboard('x')">
+              <img src="images/keyboard/c.png" onclick="keyboard('c')">
+              <img src="images/keyboard/v.png" onclick="keyboard('v')">
+              <img src="images/keyboard/b.png" onclick="keyboard('b')">
+              <img src="images/keyboard/n.png" onclick="keyboard('n')">
+              <img src="images/keyboard/m.png" onclick="keyboard('m')">
+              <img src="images/keyboard/dot.png" onclick="keyboard('.')">
+              <img src="images/keyboard/exclamation.png" onclick="keyboard('!')">
+              <img src="images/keyboard/question.png" onclick="keyboard('?')">
+          </div>
+
+          <div class="line05">
+              <img src="images/keyboard/-.png" onclick="keyboard('-')">
+              <img src="images/keyboard/_.png" onclick="keyboard('_')">
+              <img src="images/keyboard/spacebar.png" onclick="keyboard(' ')">
+              <img src="images/keyboard/@.png" onclick="keyboard('@')">
+              <img src="images/keyboard/gmail.png" onclick="keyboard('gmail.com')">
+              <img src="images/keyboard/com.png" onclick="keyboard('.com')">
+          </div>
+      </div>
+  </div>
   <style type="text/css">
     .welcome-text{
           color: #253667;
@@ -217,5 +359,87 @@ header .logo img {
 
         });
     </script>
+
+<script>
+    var message = "";
+    function ShowKeyboard()
+    {
+        document.getElementById("keyboard").style.display = "block";
+        document.getElementById("address").innerHTML = "Please Enter your Badge Number";
+    }
+
+
+    function HideKeyboard()
+    {
+        document.getElementById("keyboard").style.display = "none";
+
+        //message = "";
+        //document.getElementById("address").innerHTML = message;
+    }
+
+
+
+    function keyboard(strPara)
+    {
+        if (strPara == "bs")
+        {
+            message = message.slice(0, -1);
+        }
+
+        else
+        {
+            message += strPara;
+        }
+
+        document.getElementById("address").innerHTML = message;
+    }
+
+    function getMessage() {
+        return message;
+    }
+
+
+    $("#form-submit").click(function( e ) {
+
+        var q1 = $('input:radio[name=q1]:checked').val();
+        //alert(radioValue);
+        if (q1==null) {
+            alert("Please Select an Question 1.");
+            $("#q1").focus();
+            return false;
+        }
+        var q2 = $('input:radio[name=q2]:checked').val();
+        //alert(radioValue);
+        if (q2==null) {
+            alert("Please Select an Question 2.");
+            $("#q2").focus();
+            return false;
+        }
+        event.preventDefault();
+
+
+        var dataString = {'ScanCode': message, 'q1':q1 , 'q2': q2};
+
+        $.ajax({
+            url: "https://robotaisolutions.com/BadgeScanning/crownBioApi.php",
+            type: "post",
+            data: dataString,
+
+            success: function (data) {
+                alert(data);
+                console.log(data);
+                if (data.response === 'success') {
+                    //alert("Hi " + fname + " " + lname + ", welcome to the Crown Bio" + scanCode +" "+ bnumber);
+                    //alert(scancode);
+                    barcode = "";
+                    array = null;
+                    location.href = "menu.html";
+                }
+
+            }
+        });
+    });
+
+</script>
 </body>
 </html>
