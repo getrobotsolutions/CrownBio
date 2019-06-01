@@ -96,7 +96,7 @@
     <h1 class="welcome-text">TAP ON THE SCREEN</br>TO BEGIN</h1>
     <img src="assets/icons/qr-code-1.png" style="position: relative;top: 460px;left: 670px;width: 355px;">
 
-    
+
   </section>
 
   <footer>
@@ -251,8 +251,8 @@ header{
   background-color: #253667;
 }
 body{
-  
-  
+
+
 }
 header .logo img {
   width: 550px;
@@ -303,9 +303,9 @@ header .logo img {
                           return false;
                         }
                         event.preventDefault();
-    
-   
-    
+
+
+
 
                     var dataString = {'ScanCode': scancode, 'q1':q1 , 'q2': q2};
                         $.ajax({
@@ -343,15 +343,15 @@ header .logo img {
                       type:"post",
                       data : dataString,
                       dataType: 'JSON',
-                      
-                      
+
+
                         success: function(data) {
                           console.log(data);
                           if(data.response=='error'){
                             //alert("Welcome back");
-                            
+
                           }
-                         
+
                         }
                     });*/
 
