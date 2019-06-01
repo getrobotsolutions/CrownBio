@@ -104,7 +104,7 @@ function sendEmail() {
         Password : "3a7e231a-a9d5-4b32-b746-ea0be2c3de29",
         To : getMessage(),
         From : "selfie@getrobotsolutions.com",
-        Subject : "Your robot selfie",
+        Subject : "Your CrownBio Robot Selfie",
         Body : "Thank you for visiting CrownBio at ASCO. Please find attached your picture, you can share with others using #CrownBioBot\n" +
             "\n" +
             "Find out more at https://www.crownbio.com/resources",
