@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be2d0859-ca7f-49ff-a20a-1431d8c08e9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/maincontents.htm" beforeDir="false" afterPath="$PROJECT_DIR$/maincontents.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contents/G_Selfie/Script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Contents/G_Selfie/Script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +27,7 @@
           <entry key="css" value="11" />
           <entry key="htm" value="4" />
           <entry key="html" value="15" />
-          <entry key="js" value="13" />
+          <entry key="js" value="15" />
           <entry key="png" value="13" />
           <entry key="psd" value="1" />
         </counts>
@@ -37,7 +37,7 @@
           <entry key="CSS" value="11" />
           <entry key="HTML" value="19" />
           <entry key="Image" value="14" />
-          <entry key="JavaScript" value="13" />
+          <entry key="JavaScript" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -59,7 +59,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Contents/Selfie/Scripts/PhotoPrinting.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="234" column="56" selection-start-line="234" selection-start-column="28" selection-end-line="234" selection-end-column="56" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/maincontents.htm">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="590">
@@ -76,6 +88,15 @@
                 <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#5531#5537#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Contents/G_Selfie/Script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="105" column="44" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -172,9 +193,9 @@
         <option value="$PROJECT_DIR$/maincontents.js" />
         <option value="$PROJECT_DIR$/Contents/G_Selfie/Style.css" />
         <option value="$PROJECT_DIR$/Contents/G_Selfie/index.html" />
-        <option value="$PROJECT_DIR$/Contents/G_Selfie/Script.js" />
         <option value="$PROJECT_DIR$/css/Main.css" />
         <option value="$PROJECT_DIR$/maincontents.htm" />
+        <option value="$PROJECT_DIR$/Contents/G_Selfie/Script.js" />
       </list>
     </option>
   </component>
@@ -226,6 +247,25 @@
               <item name="Contents" type="462c0819:PsiDirectoryNode" />
               <item name="Consulting" type="462c0819:PsiDirectoryNode" />
               <item name="Images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CrownBio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CrownBio" type="462c0819:PsiDirectoryNode" />
+              <item name="Contents" type="462c0819:PsiDirectoryNode" />
+              <item name="G_Selfie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CrownBio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CrownBio" type="462c0819:PsiDirectoryNode" />
+              <item name="Contents" type="462c0819:PsiDirectoryNode" />
+              <item name="Selfie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CrownBio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CrownBio" type="462c0819:PsiDirectoryNode" />
+              <item name="Contents" type="462c0819:PsiDirectoryNode" />
+              <item name="Selfie" type="462c0819:PsiDirectoryNode" />
+              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CrownBio" type="b2602c69:ProjectViewProjectNode" />
@@ -290,7 +330,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42739000" />
+    <option name="totallyTimeSpent" value="42984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -408,16 +448,6 @@
     <entry file="file://$PROJECT_DIR$/Contents/Selfie/Images/frame06.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Contents/Selfie/Scripts/PhotoPrinting.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="119" column="12" lean-forward="true" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Contents/Selfie/Styles/Css/PhotoPrinting.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
@@ -493,13 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Contents/G_Selfie/Script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="118" column="10" lean-forward="true" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Contents/Consulting/Script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -555,6 +578,23 @@
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#5531#5537#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contents/Selfie/Scripts/PhotoPrinting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="234" column="56" selection-start-line="234" selection-start-column="28" selection-end-line="234" selection-end-column="56" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contents/G_Selfie/Script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="105" column="44" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
         </state>
       </provider>
     </entry>

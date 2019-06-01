@@ -103,8 +103,8 @@ function sendEmail() {
         Username : "manage.ars1@gmail.com",
         Password : "3a7e231a-a9d5-4b32-b746-ea0be2c3de29",
         To : getMessage(),
-        From : "manage.ars1@gmail.com",
-        Subject : "This is the subject",
+        From : "selfie@getrobotsolutions.com",
+        Subject : "Your robot selfie",
         Body : "Hi for the email to go along with the picture can we put this: Thank you for visiting CrownBio at ASCO. Please find attached your picture, you can share with others using #CrownBioBot\n" +
             "\n" +
             "Find out more at https://www.crownbio.com/resources",
