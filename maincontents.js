@@ -136,7 +136,7 @@ function OnJoystickControlled(strPara){
     if(btn_info[0] == '1'){
            // window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Please scan your badge to begin.");//I'm here to assist you, press any button on my screen to begin");
+            window.external.PlaySpeech("You look nice, I like you, please tap my screen to begin.");//I'm here to assist you, press any button on my screen to begin");
           
     }
 
