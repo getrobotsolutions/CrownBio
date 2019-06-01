@@ -34,49 +34,49 @@
   <section class="main-content">
     <h1 class="welcome-text">SCAN YOUR</br>BADGE TO BEGIN</h1>
     <img src="assets/icons/qr-code-1.png" style="position: relative;top: 460px;left: 670px;width: 355px;">
-
-    
   </section>
 
   <footer>
     <img src="assets/footer.png" width="700">
   </footer>
   <div id="dialog-overlay"></div>
- <div id="dialog-box" style="">
-      <a href="#" class="button close">Close</a>
+    <div id="dialog-box" style="">
+      <!--<a href="#" class="button close">Close</a>-->
       <div class="dialog-content">
         <div id="dialog-message">
           <form class="survey-form" id="survey-form" action="#">
             <div class="form-group">
-              <div class="personal-info">
+
+              <div class="">
                 <p>Are you currently running preclinical studies?</p>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="q1" id="q1" value="Yes">
                     <label class="form-check-label">
-                    Yes
+                     Yes 
                     </label>
                     <input class="form-check-input" type="radio" name="q1" id="q1" value="No">
                     <label class="form-check-label">
-                    No
+                     No 
                     </label>
                   </div>
                 </div>
               </div>
 
-              <div class="personal-info">
-                <p>Have you ever run a mouse clinical trial before? (Yes) or (No)</p>
+              <div class="">
+                <p>Have you ever run a mouse clinical trial before?</p>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="q2" id="q2" value="Yes">
                     <label class="form-check-label">
-                    Yes
+                     Yes 
                     </label>
                     <input class="form-check-input" type="radio" name="q2" id="q2" value="No">
                     <label class="form-check-label">
-                    No
+                     No 
                     </label>
                   </div>
                 </div>
               </div>
+
             <button type="" id="form-submit" class="btn1" required="" value="SUBMIT" name="">SUBMIT</button>
           </form>
         </div>
@@ -84,47 +84,39 @@
     </div>
   <style type="text/css">
     .welcome-text{
-          color: #253667;
-    font-size: 80px;
-    position: relative;
-    top: 750px;
-    text-align: center;
-    width: 600px;
-    font-weight: bold;
+      color: #253667;
+      font-size: 80px;
+      position: relative;
+      top: 750px;
+      text-align: center;
+      width: 600px;
+      font-weight: bold;
     }
 
-  .main-content {
-    height: 1400px;
-    margin-top: 0;
-    padding-top: 100px;
-    background-image: url(assets/home-bg.png);
-  background-size: 1080px;
-  background-position:  0 -200px;
-  background-repeat: no-repeat;
-    /*border-bottom: 10px solid #1f3d7c;
-    background-image: url(assets/background.png);
-    background-size: 1520px;*/
-}
-header{
-  background-color: #253667;
-}
-body{
-  
-  
-}
-header .logo img {
-  width: 550px;
-}
+    .main-content {
+      height: 1400px;
+      margin-top: 0;
+      padding-top: 100px;
+      background-image: url(assets/home-bg.png);
+      background-size: 1080px;
+      background-position:  0 -200px;
+      background-repeat: no-repeat;
+    }
+    header{
+      background-color: #253667;
+    }
+    header .logo img {
+      width: 550px;
+    }
   </style>
-<script>
-
+  
+  <script>
         //ChangeLanguage('en-us');
         $(document).ready(function() {
 
             flag = true;
-
-
             var barcode = "";
+
             $(document).keydown(function (e) {
                 var code = (e.keyCode ? e.keyCode : e.which);
                 console.log(code);
@@ -161,11 +153,8 @@ header .logo img {
                           return false;
                         }
                         event.preventDefault();
-    
-   
-    
 
-                    var dataString = {'ScanCode': scancode, 'q1':q1 , 'q2': q2};
+                        var dataString = {'ScanCode': scancode, 'q1':q1 , 'q2': q2};
                         $.ajax({
                             url: "https://robotaisolutions.com/BadgeScanning/crownBioApi.php",
                             type: "post",
@@ -178,14 +167,12 @@ header .logo img {
                                     //alert(scancode);
                                     barcode = "";
                                     array = null;
+                                    PlaySpeech("Welcome" + data.fname + "" + data.lname)
                                     location.href = "menu.html";
                                 }
-
                             }
                         });
-                    });
-
-
+                      });
                     }
                     else {
                         barcode = barcode + String.fromCharCode(code);
@@ -201,8 +188,6 @@ header .logo img {
                       type:"post",
                       data : dataString,
                       dataType: 'JSON',
-                      
-                      
                         success: function(data) {
                           console.log(data);
                           if(data.response=='error'){
@@ -212,10 +197,8 @@ header .logo img {
                          
                         }
                     });*/
-
             });
-
         });
-    </script>
+  </script>
 </body>
 </html>
