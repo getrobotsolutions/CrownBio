@@ -113,11 +113,11 @@
                 <p>Are you currently running preclinical studies?</p>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="q1" id="q1" value="Yes" style="transform: scale(2); margin-left: 20px; width: 30px; height: 30px;">
-                    <label for="Yes" class="form-check-label" style="font-size: x-large;">
+                    <label  class="form-check-label" style="font-size: x-large;">
                     Yes
                     </label>
                     <input class="form-check-input" type="radio" name="q1" id="q1" value="No" style="margin-left: 50px !important; transform: scale(2);  width: 30px; height: 30px;">
-                    <label for="No" class="form-check-label" style="font-size: x-large;  margin-top: 30px;">
+                    <label  class="form-check-label" style="font-size: x-large;  margin-top: 30px;">
                     No
                     </label>
                   </div>
@@ -138,18 +138,13 @@
 
                   </div>
                 </div>
-              </div>
-            <button type="" id="form-submit" class="btn1" required="" value="SUBMIT" name="" style="    font-size: x-large;
-    margin-left: 350px;
-    width: 150px;
-    height: 60px;
-    background-color: #ED9B2D;
-    border-radius: 20px;
-    color: white;">SUBMIT</button>
+
+            <button type="" id="form-submit" class="btn1" required="" value="SUBMIT" name="" style="    font-size: x-large; margin-left: 350px; width: 150px; height: 60px; background-color: #ED9B2D; border-radius: 20px; color: white;">SUBMIT</button>
           </form>
         </div>
+        </div>
       </div>
-    </div>
+
 
   <div id="keyboard" class="keyboard" style="display: none">
       <div class="top">
@@ -259,7 +254,7 @@ header .logo img {
 }
   </style>
 <script>
-
+/*
         //ChangeLanguage('en-us');
         $(document).ready(function() {
 
@@ -353,11 +348,11 @@ header .logo img {
                           }
 
                         }
-                    });*/
+                    });
 
             });
 
-        });
+        });*/
     </script>
 
 <script>
@@ -402,14 +397,14 @@ header .logo img {
     $("#form-submit").click(function( e ) {
 
         var q1 = $('input:radio[name=q1]:checked').val();
-        //alert(radioValue);
+        //alert(q1);
         if (q1==null) {
             alert("Please Select an Question 1.");
             $("#q1").focus();
             return false;
         }
         var q2 = $('input:radio[name=q2]:checked').val();
-        //alert(radioValue);
+        //alert(q2);
         if (q2==null) {
             alert("Please Select an Question 2.");
             $("#q2").focus();
