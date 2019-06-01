@@ -149,7 +149,7 @@ function OnJoystickControlled(strPara){
     if(btn_info[2] == '1'){
         //window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Check out my app to learn more about Crownbio.");
+            window.external.PlaySpeech("Check out my app to learn more about Crown bio.");
     }
     if(btn_info[3] == '1'){
         //window.external.ChangeLanguage("en-us");
