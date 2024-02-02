@@ -397,43 +397,43 @@ header .logo img {
     $("#form-submit").click(function( e ) {
         location.href = "menu.html";
 
-        var q1 = $('input:radio[name=q1]:checked').val();
-        //alert(q1);
-        if (q1==null) {
-            alert("Please Select an Question 1.");
-            $("#q1").focus();
-            return false;
-        }
-        var q2 = $('input:radio[name=q2]:checked').val();
-        //alert(q2);
-        if (q2==null) {
-            alert("Please Select an Question 2.");
-            $("#q2").focus();
-            return false;
-        }
-        event.preventDefault();
+        // var q1 = $('input:radio[name=q1]:checked').val();
+        // //alert(q1);
+        // if (q1==null) {
+        //     alert("Please Select an Question 1.");
+        //     $("#q1").focus();
+        //     return false;
+        // }
+        // var q2 = $('input:radio[name=q2]:checked').val();
+        // //alert(q2);
+        // if (q2==null) {
+        //     alert("Please Select an Question 2.");
+        //     $("#q2").focus();
+        //     return false;
+        // }
+        // event.preventDefault();
 
 
-        var dataString = {'ScanCode': message, 'q1':q1 , 'q2': q2};
+        // var dataString = {'ScanCode': message, 'q1':q1 , 'q2': q2};
 
-        $.ajax({
-            url: "https://robotaisolutions.com/BadgeScanning/crownBioApi.php",
-            type: "post",
-            data: dataString,
+        // $.ajax({
+        //     url: "https://robotaisolutions.com/BadgeScanning/crownBioApi.php",
+        //     type: "post",
+        //     data: dataString,
 
-            success: function (data) {
-                //alert(data);
-                console.log(data);
-                if (data.response === 'success') {
-                    //alert("Hi " + fname + " " + lname + ", welcome to the Crown Bio" + scanCode +" "+ bnumber);
-                    //alert(scancode);
-                    barcode = "";
-                    array = null;
-                    location.href = "menu.html";
-                }
+        //     success: function (data) {
+        //         //alert(data);
+        //         console.log(data);
+        //         if (data.response === 'success') {
+        //             //alert("Hi " + fname + " " + lname + ", welcome to the Crown Bio" + scanCode +" "+ bnumber);
+        //             //alert(scancode);
+        //             barcode = "";
+        //             array = null;
+        //             location.href = "menu.html";
+        //         }
 
-            }
-        });
+        //     }
+        // });
     });
 
 </script>
